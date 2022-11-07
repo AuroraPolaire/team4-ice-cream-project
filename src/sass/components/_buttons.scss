@@ -1,0 +1,86 @@
+.button-with-border {
+  padding: 7px 10px;
+  font-family: var(--button-font);
+  font-size: 8px;
+  font-weight: 600px;
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  color: #000;
+
+  transition: color 250ms ease-in-out, border 250ms ease-in-out;
+
+  &:hover {
+    border: 2px solid #0a8817;
+  }
+
+  &:focus {
+    border: 2px solid #0a8817;
+    color: #fcfcfc;
+  }
+
+  &:disabled {
+    border: 2px solid #ababab;
+    color: #000;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-border {
+    padding: 12px 34px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+}
+
+.button {
+  font-family: var(--button-font);
+  font-size: 8px;
+  background-color: #f8d24e;
+  border-radius: 8px;
+  color: #000;
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+
+  &:hover {
+    background-color: #0a8817;
+  }
+
+  &:focus {
+    background-color: #0a8817;
+    color: #fcfcfc;
+  }
+
+  &:disabled {
+    background-color: #ababab;
+    color: #000;
+  }
+}
+
+.button-text-only {
+  font-family: var(--button-font);
+  font-size: 8px;
+  font-weight: 600px;
+  text-decoration: underline;
+  background-color: transparent;
+  color: #f8d24e;
+  transition: color 250ms ease-in-out;
+
+  &:hover {
+    color: #0a8817;
+  }
+
+  &:focus {
+    color: #fcfcfc;
+  }
+
+  &:disabled {
+    color: #ababab;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-transparent {
+    font-size: 14px;
+    border-radius: 10px;
+  }
+}
