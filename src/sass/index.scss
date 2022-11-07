@@ -1,2 +1,6 @@
 @import './common';
-@import './example';
+
+@import './base/base';
+@import './base/container.scss';
+
+@import './components/buttons.scss';
