@@ -1,3 +1,5 @@
+// кнопка тільки з бордером //
+
 .button-with-border {
   padding: 7px 10px;
   font-family: var(--button-font);
@@ -25,6 +27,8 @@
   }
 }
 
+//  кнопка з бордером для 1200рх   //
+
 @media screen and (min-width: 1200px) {
   .button-border {
     padding: 12px 34px;
@@ -32,6 +36,8 @@
     border-radius: 10px;
   }
 }
+
+//   Звичайна кнопка   //
 
 .button {
   font-family: var(--button-font);
@@ -56,6 +62,8 @@
   }
 }
 
+//   Кнопка тільки з текстом  //
+
 .button-text-only {
   font-family: var(--button-font);
   font-size: 8px;
@@ -78,9 +86,10 @@
   }
 }
 
+//   Кнопка тільки з текстом  для 1200рх  //
+
 @media screen and (min-width: 1200px) {
   .button-transparent {
     font-size: 14px;
-    border-radius: 10px;
   }
 }
