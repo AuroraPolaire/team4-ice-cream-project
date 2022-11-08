@@ -1,35 +1,51 @@
 .about-container {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-section {
   background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 42px;
+  font-family: var(--primary-font);
+  color: var(--text-light);
 }
 
 .about__label {
   margin-bottom: 12px;
   text-align: center;
 
-  font-family: var(--primary-font);
   font-weight: 700;
   font-size: 18px;
   line-height: 1.22;
   text-transform: uppercase;
-  color: var(--text-light);
 }
 
 .about-section-title_color-light {
   text-align: center;
   margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
 
   font-family: 'Seymour One', sans-serif;
-  font-size: 36px;
-  line-height: 1.25;
-  letter-spacing: 0.06em;
+  font-size: 30px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
+}
 
-  color: var(--text-light);
-  background-color: linear-gradient;
+.about-description {
+  padding-top: 340px;
+}
+
+.about-description__paragraph {
+  // margin-bottom: 10px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.75;
+  letter-spacing: 0.04em;
 }
 
 .about-description {
@@ -37,18 +53,35 @@
     content: '';
     display: inline-block;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 50%;
+    top: 183px;
+    transform: translateX(-50%);
 
-    margin: 0;
+    // margin-left: auto;
+    // margin-right: auto;
     padding: 0;
-    width: 500px;
-    height: 500px;
-    background-color: linear-gradient(
+    width: 278px;
+    height: 278px;
+    background: linear-gradient(
         0deg,
         rgba(248, 210, 78, 0.7),
         rgba(248, 210, 78, 0.7)
       ),
       #d9d9d9;
+    /*background-color: rgba(248, 210, 78, 0.7);*/
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    border-radius: 140.182px;
   }
+}
+
+.about__btn {
+  width: 164px;
+  height: 42px;
+  text-align: center;
+  padding: 12px 34px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+
+  transition: color var(--transition-dur-and-func);
 }
