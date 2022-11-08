@@ -1,0 +1,45 @@
+.about-section {
+  background-color: linear-gradient(
+    to right,
+    var(--background-color),
+    var(--background-color)
+  );
+}
+
+.about-container {
+  position: relative;
+}
+
+.about-section-title_color-light {
+  text-align: center;
+  margin-bottom: 82px;
+
+  font-family: 'Seymour One', sans-serif;
+  font-size: 36px;
+  line-height: 1.25;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--text-light);
+}
+
+.about-description {
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    height: 500px;
+    background-color: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+  }
+}
