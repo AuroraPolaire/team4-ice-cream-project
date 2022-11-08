@@ -6,23 +6,24 @@
   font-size: 8px;
   font-weight: 600px;
   background-color: transparent;
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--active);
   border-radius: 8px;
   color: #000;
 
-  transition: color 250ms ease-in-out, border 250ms ease-in-out;
+  transition: color var(--transition-dur-and-func),
+    border var(--transition-dur-and-func);
 
   &:hover {
-    border: 2px solid #0a8817;
+    border: 2px solid var(--hover);
   }
 
   &:focus {
-    border: 2px solid #0a8817;
-    color: #fcfcfc;
+    border: 2px solid var(--hover);
+    color: var(--focus);
   }
 
   &:disabled {
-    border: 2px solid #ababab;
+    border: 2px solid var(--disabled);
     color: #000;
   }
 }
@@ -42,22 +43,23 @@
 .button {
   font-family: var(--button-font);
   font-size: 8px;
-  background-color: #f8d24e;
+  background-color: var(--active);
   border-radius: 8px;
   color: #000;
-  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
 
   &:hover {
-    background-color: #0a8817;
+    background-color: var(--hover);
   }
 
   &:focus {
-    background-color: #0a8817;
-    color: #fcfcfc;
+    background-color: var(--hover);
+    color: var(--focus);
   }
 
   &:disabled {
-    background-color: #ababab;
+    background-color: var(--disabled);
     color: #000;
   }
 }
@@ -70,19 +72,19 @@
   font-weight: 600px;
   text-decoration: underline;
   background-color: transparent;
-  color: #f8d24e;
-  transition: color 250ms ease-in-out;
+  color: var(--active);
+  transition: color var(--transition-dur-and-func);
 
   &:hover {
-    color: #0a8817;
+    color: var(--hover);
   }
 
   &:focus {
-    color: #fcfcfc;
+    color: var(--focus);
   }
 
   &:disabled {
-    color: #ababab;
+    color: var(--disabled);
   }
 }
 

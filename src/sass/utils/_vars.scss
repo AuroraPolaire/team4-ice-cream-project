@@ -1,20 +1,22 @@
 :root {
-    --background-color: #84A178;
-    --text-light: #FCFCFC;
-    --text-dark: #131313;
-    --text-copyright: #7A7A7A;
-    --accent-1: #9CBE8F;
-    --accent-1-secondary: #AEC6A5;
-    --accent-1-light: #96AF8C;
-    --accent-2: #F8D24E;
-    --accent-2-secondary: #EFD478;
-    --accent-3: #D5753F;
-    --accent-3-secondary: #D6936D;
-    // BUTTONS COLORS
-    --active: #F8D24E;
-    --disabled: #ABABAB;
-    --hover: #0A8817;
-    --slider-disabled: #D9D9D9;
-    // TRANSITIONS
-    --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --background-color: #84a178;
+  --text-light: #fcfcfc;
+  --text-dark: #131313;
+  --text-copyright: #7a7a7a;
+  --accent-1: #9cbe8f;
+  --accent-1-secondary: #aec6a5;
+  --accent-1-light: #96af8c;
+  --accent-2: #f8d24e;
+  --accent-2-secondary: #efd478;
+  --accent-3: #d5753f;
+  --accent-3-secondary: #d6936d;
+  // BUTTONS COLORS
+  --button-font: 'Montserrat', sans-serif;
+  --active: #f8d24e;
+  --focus: #fcfcfc;
+  --disabled: #ababab;
+  --hover: #0a8817;
+  --slider-disabled: #d9d9d9;
+  // TRANSITIONS
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
