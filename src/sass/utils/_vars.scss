@@ -1,0 +1,20 @@
+:root {
+    --background-color: #84A178;
+    --text-light: #FCFCFC;
+    --text-dark: #131313;
+    --text-copyright: #7A7A7A;
+    --accent-1: #9CBE8F;
+    --accent-1-secondary: #AEC6A5;
+    --accent-1-light: #96AF8C;
+    --accent-2: #F8D24E;
+    --accent-2-secondary: #EFD478;
+    --accent-3: #D5753F;
+    --accent-3-secondary: #D6936D;
+    // BUTTONS COLORS
+    --active: #F8D24E;
+    --disabled: #ABABAB;
+    --hover: #0A8817;
+    --slider-disabled: #D9D9D9;
+    // TRANSITIONS
+    --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
