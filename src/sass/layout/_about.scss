@@ -49,6 +49,22 @@
   letter-spacing: 0.04em;
 }
 
+@media screen and (max-width: 767px) {
+  .about-description__paragraph:last-child {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
 .about-description {
   &::before {
     content: '';
@@ -72,29 +88,24 @@
   }
 }
 
-.about-description {
-  &::before {
+.about-section-title_color-light {
+  &::after {
     content: '';
+    z-index: 100;
     display: inline-block;
     position: absolute;
     left: 50%;
     top: 205px;
     transform: translateX(-50%);
+    background-position: -1px;
 
-    // margin-left: auto;
-    // margin-right: auto;
     padding: 0;
     width: 278px;
     height: 278px;
-    background: linear-gradient(
-        0deg,
-        rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)
-      ),
-      #d9d9d9;
-    /*background-color: rgba(248, 210, 78, 0.7);*/
-    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
-    border-radius: 140.182px;
+
+    background-image: url('../images/cow.jpg');
+    background-size: 287px;
+    border-radius: 1038.58px;
   }
 }
 
@@ -102,6 +113,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: none;
+
   width: 164px;
   height: 42px;
   text-align: center;
