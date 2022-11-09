@@ -38,7 +38,7 @@
 .header-btn {
     display: flex;
     align-items: center;
-  justify-content: center;
+    justify-content: center;
     min-width: 152px;
     padding: 12px 34px;
     border: none;
@@ -49,6 +49,7 @@
 
 .header-btn__icon {
     fill: currentColor;
+    margin-left: 7px;
 }
 
 @media screen and (max-width: 767px) {
@@ -65,7 +66,6 @@
 .header {
     padding-top: 20px;
 }
-
 }
 
 @media screen and (max-width: 1199px) {
