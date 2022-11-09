@@ -118,10 +118,12 @@
 }
 
 .btn__contacts {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 196px;
   height: 42px;
-
   font-weight: 600;
   font-size: 14px;
   line-height: 1.05;
@@ -131,4 +133,8 @@
 
 .button.btn__contacts {
   border: none;
+}
+
+.btn__contacts--arrow-icon {
+  margin-left: 6px;
 }
