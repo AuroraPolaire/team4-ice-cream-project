@@ -9,6 +9,7 @@
     }
 }
 
+
 .footer-subtitle {
     font-weight: 700;
     font-size: 18px;
@@ -44,6 +45,7 @@
     }
 }
 
+
 .footer-title {
     font-weight: 700;
     font-size: 34px;
@@ -52,6 +54,7 @@
     color: var(--text-light);
     text-align: left;
 }
+
 
 @media screen and (max-width:767px) {
     .footer-title {
@@ -75,6 +78,7 @@
         margin-bottom: 54px;
     }
 }
+
 
 .footer-social__list {
     display: flex;
