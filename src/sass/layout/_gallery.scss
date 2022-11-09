@@ -1,0 +1,74 @@
+.mergening-sections {
+    width: 100%;
+    background:
+        url(./../images/bg-icecream-320@1x.jpg) 0px 150px no-repeat,
+        linear-gradient(to top, var(--background-color) 75%, var(--text-light) 75%, var(--text-light) 93%, var(--background-color) 75%);
+    background-size: cover;
+}
+
+.gallery__section {
+    padding-top: 20px;
+}
+
+.gallery__img {
+    display: block;
+    border-radius: 7.41px;
+    overflow: hidden;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .mergening-sections {
+        background: url(./../images/bg-icecream-320@2x.jpg) 0px 150px no-repeat,
+            linear-gradient(to top, var(--background-color) 75%, var(--text-light) 75%, var(--text-light) 93%, var(--background-color) 75%);
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .mergening-sections {
+
+        background: url(./../images/bg-icecream-768@1x.jpg) 0px 184px no-repeat,
+            linear-gradient(to top, var(--background-color) 100%, var(--background-color) 100%);
+
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .mergening-sections {
+
+            background: url(./../images/bg-icecream-768@2x.jpg) 0px 184px no-repeat,
+                linear-gradient(to top, var(--background-color) 100%, var(--background-color) 100%);
+
+        }
+    }
+}
+
+// 1200px//
+
+@media screen and (min-width: 769px) {
+    .mergening-sections {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        background: url(./../images/bg-icecream-1200@1x.jpg) 0px 137px no-repeat,
+            linear-gradient(to top, var(--background-color) 100%, var(--background-color) 100%);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .mergening-sections {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            background: url(./../images/bg-icecream-1200@2x.jpg) 0px 137px no-repeat,
+                linear-gradient(to top, var(--background-color) 100%, var(--background-color) 100%);
+        }
+    }
+
+        .gallery__section {
+            padding-top: 43px;
+        }
+}
