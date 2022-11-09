@@ -156,10 +156,35 @@
   }
 }
 
+.buy-modal__name-input:focus,
+.buy-modal__tel-input:focus,
+.buy-modal__comment-input:focus {
+  border-color: var(--focus);
+}
+
+.buy-modal__name-input:hover,
+.buy-modal__tel-input:hover,
+.buy-modal__comment-input:hover {
+  border-color: var(--hover);
+}
+
+.buy-modal__comment-input {
+  resize: none;
+  height: 65px;
+
+  &::placeholder {
+    font-size: 14px;
+  }
+}
+
 .buy-modal__name-input,
 .buy-modal__phone-input {
   height: 32px;
   margin-bottom: 12px;
+}
+
+.buy-modal__button {
+  margin-top: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -179,8 +204,8 @@
   .buy-modal__item--brown {
     margin-bottom: 0;
   }
-}
 
-// .buy-modal__button {
-//   font-size: ;
-// }
+  .buy-modal__button {
+    margin-top: 32px;
+  }
+}
