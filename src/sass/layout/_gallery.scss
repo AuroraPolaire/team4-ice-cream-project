@@ -49,11 +49,9 @@
 
 @media screen and (min-width: 769px) {
     .mergening-sections {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
         background: url(./../images/bg-icecream-1200@1x.jpg) 0px 137px no-repeat,
             linear-gradient(to top, var(--background-color) 100%, var(--background-color) 100%);
+        background-size: cover;
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -68,7 +66,7 @@
         }
     }
 
-        .gallery__section {
-            padding-top: 43px;
-        }
+    .gallery__section {
+        padding-top: 43px;
+    }
 }
