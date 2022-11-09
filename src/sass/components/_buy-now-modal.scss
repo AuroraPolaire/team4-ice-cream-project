@@ -157,13 +157,13 @@
 }
 
 .buy-modal__name-input:focus,
-.buy-modal__tel-input:focus,
+.buy-modal__phone-input:focus,
 .buy-modal__comment-input:focus {
   border-color: var(--focus);
 }
 
 .buy-modal__name-input:hover,
-.buy-modal__tel-input:hover,
+.buy-modal__phone-input:hover,
 .buy-modal__comment-input:hover {
   border-color: var(--hover);
 }
@@ -188,9 +188,21 @@
 }
 
 @media screen and (min-width: 768px) {
+  .buy-modal__close-btn {
+    top: 20px;
+    right: 20px;
+  }
+
   .buy-modal__title {
     margin-bottom: 84px;
     font-size: 20px;
+  }
+
+  .buy-modal__name-input,
+  .buy-modal__phone-input,
+  .buy-modal__comment-input {
+    width: 368px;
+    padding: 16px 11px;
   }
 
   .buy-modal__list {
