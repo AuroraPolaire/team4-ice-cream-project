@@ -1,6 +1,7 @@
 body {
   font-family: var(--primary-font);
-  color: var(--paragraph-color);
+  color: var(--text-light);
+  cursor: url('./../images/cursor.png'), auto;
 }
 
 a {

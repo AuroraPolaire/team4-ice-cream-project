@@ -1,0 +1,186 @@
+.buy-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 28px;
+
+  width: 280px;
+  background-color: #fcfcfc;
+  border: 2px solid var(--accent-2);
+  border-radius: 10px;
+
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@media screen and (min-width: 768px) {
+  .buy-modal {
+    width: 568px;
+  }
+}
+
+//   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .modal {
+//     width: 528px;
+//     height: 581px;
+//   }
+// }
+
+.buy-modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.buy-modal__title {
+  margin-bottom: 84px;
+  font-family: 'Seymour One', sans-serif;
+  line-height: 1.5;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.buy-modal__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 86px;
+}
+
+.buy-modal__item {
+  position: relative;
+  display: block;
+  width: 132px;
+  height: 136.4px;
+  border-radius: 15.7808px;
+  padding-top: 95px;
+
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--text-dark);
+}
+
+.buy-modal__item--green {
+  border: 2px solid #96af8c;
+}
+
+.buy-modal__item--green::before {
+  position: absolute;
+  z-index: 1000;
+  width: 132px;
+  height: 131.95px;
+  top: -60px;
+  left: -2;
+  content: ' ';
+  background: url('../images/modal_pictures/buy_now/buy-now-modal-ice-cream.png')
+      0px -7.5px no-repeat,
+    linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+
+  background-size: contain;
+  border-radius: 98.6301px;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.buy-modal__item--yellow {
+  background-color: #efd478;
+}
+
+.buy-modal__item--yellow::before {
+  position: absolute;
+  z-index: 1000;
+  width: 132px;
+  height: 131.95px;
+  top: -60px;
+  left: 0;
+  content: ' ';
+  background: url('../images/modal_pictures/buy_now/buy-now-modal-ice-coffee.png')
+      0px -7.5px no-repeat,
+    linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+
+  background-size: contain;
+  border-radius: 98.6301px;
+  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+
+.buy-modal__item--brown {
+  border: 2px solid #d6936d;
+  margin-bottom: 24px;
+}
+
+.buy-modal__item--brown::before {
+  position: absolute;
+  z-index: 1000;
+  width: 132px;
+  height: 131.95px;
+  top: -60px;
+  left: -2;
+  content: ' ';
+  background: url('../images/modal_pictures/buy_now/buy-now-modal-ice-milkshake.png')
+      0px -7.5px no-repeat,
+    linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+
+  background-size: contain;
+  border-radius: 98.6301px;
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+
+.buy-modal__form-box {
+  text-align: center;
+}
+
+.buy-modal__name-input,
+.buy-modal__phone-input,
+.buy-modal__comment-input {
+  width: 100%;
+  padding: 12px 8px;
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+
+  &::placeholder {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--text-dark);
+  }
+}
+
+.buy-modal__name-input,
+.buy-modal__phone-input {
+  height: 32px;
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .buy-modal__title {
+    margin-bottom: 84px;
+    font-size: 20px;
+  }
+
+  .buy-modal__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+
+  .buy-modal__item--brown {
+    margin-bottom: 0;
+  }
+}
+
+// .buy-modal__button {
+//   font-size: ;
+// }
