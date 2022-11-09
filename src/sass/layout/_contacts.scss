@@ -15,7 +15,7 @@
   background-color: var(--text-light);
   border-radius: 24px;
   box-shadow: 0 8 30 rgba(212, 20, 67, 0.1);
-  padding: 20px;
+  padding: 40px 32px;
 
   width: 100%;
   margin-left: auto;
@@ -125,6 +125,10 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.05;
-
+  border-radius: 10px;
   cursor: pointer;
+}
+
+.button.btn__contacts {
+  border: none;
 }
