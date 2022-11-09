@@ -26,22 +26,31 @@
   background-color: var(--accent-2);
   color: var(--text-dark);
 
+  line-height: 186%;
+  text-align: center;
   font-weight: 500;
   font-size: 12px;
+  letter-spacing: 0.04em;
 }
 
 .contacts__title {
   color: var(--text-dark);
 
+  line-height: 186%;
+  text-align: left;
   font-weight: 500;
   font-size: 12px;
+  letter-spacing: 0.04em;
 }
 
 .contacts__aft-title {
   color: var(--accent-3-secondary);
 
+  line-height: 183%;
+  text-align: left;
   font-weight: 500;
   font-size: 12px;
+  letter-spacing: 0.04em;
 }
 
 .constacts__line {
@@ -55,6 +64,8 @@
 .contacts__date {
   color: var(--text-dark);
 
+  line-height: 186%;
+  text-align: left;
   font-weight: 500;
   font-size: 12px;
 }
@@ -62,6 +73,8 @@
 .contacts__time {
   color: var(--disabled);
 
+  line-height: 186%;
+  text-align: left;
   font-weight: 500;
   font-size: 12px;
 }
@@ -73,6 +86,19 @@
 .contacts__link {
   color: var(--text-dark);
 
+  line-height: 123%;
+  text-align: left;
   font-weight: 500;
   font-size: 12px;
+}
+
+.btn__contacts {
+  width: 196px;
+  height: 42px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.05;
+
+  cursor: pointer;
 }
