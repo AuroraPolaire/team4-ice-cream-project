@@ -33,6 +33,7 @@
     font-weight: 800;
     font-size: 22px;
     line-height: 1.23;
+    letter-spacing: 0.04em;
   }
   @media screen and (min-width: 1200px) {
     font-size: 30px;
@@ -68,38 +69,48 @@
 
 .about-description {
   padding-top: 340px;
-  // padding-bottom: 20px;
+
   @media screen and (min-width: 768px) {
-    padding-top: 0;
+    padding-top: 7px;
     padding-left: 384px;
     padding-bottom: 20px;
     // text-align: left;
   }
+
   @media screen and (min-width: 1200px) {
     // padding-top: 340px;
+    padding-left: 600px;
+    padding-right: 105px;
+    padding-top: 90px;
 
-    padding-bottom: 20px;
+    padding-bottom: 122px;
   }
 }
 
 .about-description__paragraph {
-  // margin-bottom: 10px;
   text-align: center;
   font-size: 12px;
   line-height: 1.75;
   letter-spacing: 0.04em;
+
+  &:nth-child(3) {
+    margin-bottom: 48px;
+  }
 
   @media screen and (min-width: 768px) {
     text-align: left;
     margin-bottom: 8px;
   }
 
-  &:nth-child(3) {
-    margin-bottom: 48px;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 767px) {
+  .about-description__paragraph:nth-child(1) {
+    margin-bottom: 4px;
+  }
   .about-description__paragraph:nth-child(2) {
     margin-bottom: 20px;
   }
@@ -115,6 +126,13 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-description__paragraph:nth-child(2),
+  .about-description__paragraph:nth-child(3) {
+    font-size: 14px;
   }
 }
 
@@ -150,7 +168,13 @@
     }
 
     @media screen and (min-width: 1200px) {
-      border-radius: 165.879px;
+      left: 266px;
+      top: 176px;
+
+      width: 500px;
+      height: 500px;
+      box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+      border-radius: 250px;
     }
   }
 }
@@ -187,7 +211,25 @@
     }
 
     @media screen and (min-width: 1200px) {
-      border-radius: 165.879px;
+      left: 266px;
+      top: 215px;
+
+      width: 490px;
+      height: 490px;
+      background-size: 490px;
+
+      border-radius: 1852.2px;
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/cow@2x.jpg');
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url('../images/cow@3x.jpg');
     }
   }
 }
@@ -207,6 +249,10 @@
   line-height: 1.29;
 
   transition: color var(--transition-dur-and-func);
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+  }
 }
 
 .about__icon {
