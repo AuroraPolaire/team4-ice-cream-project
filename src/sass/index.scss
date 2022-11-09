@@ -1,11 +1,13 @@
 @import './base/common';
 @import './utils/mixins';
 @import './utils/vars';
-
+@import './utils/visually-hidden';
 @import './base/base';
 @import './base/container.scss';
 
 @import './components/buttons.scss';
+@import './components/backdrop';
+@import './components/buy-now-modal';
 
 @import './layout/header';
 @import './layout/hero';

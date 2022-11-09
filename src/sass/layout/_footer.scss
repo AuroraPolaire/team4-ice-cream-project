@@ -19,12 +19,14 @@
     max-width: 234px;
     margin-bottom: 16px;
     @media screen and (min-width:768px) {
+
         font-size: 26px;
         letter-spacing: 0.04em;
         max-width: 352px;
         margin-bottom: 9px;
-            }
+  }
     @media screen and (min-width:1200px) {
+
         font-size: 30px;
         font-weight: 400;
         letter-spacing: 0.04em;
@@ -88,7 +90,8 @@
     color: var(--background-color);
     height: 32px;
     width: 32px;
-&:hover,
+
+ &:hover,
 &:focus {
     color: #FFFFFF;
     outline: #FFFFFF;
@@ -101,6 +104,7 @@
         height: 34px;
         width: 34px;
     }
+
 }
 
 .footer-social__icon {
@@ -120,6 +124,7 @@
         width: 285px;
     }
 
+
     @media screen and (min-width:1200px) {
         font-size: 16px;
         width: 338px;
@@ -128,6 +133,7 @@
 }
 
 .footer__contact__link {
+
     color: var(--text-light);
 }
 
@@ -159,9 +165,11 @@
         line-height: 1.86;
         max-width: 298px;
     }
+
     @media screen and (min-width: 1200px) {
         font-size: 12px;
         max-width: 255px;
         line-height: 1.86;
     }
+
 }

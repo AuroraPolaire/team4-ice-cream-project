@@ -4,7 +4,7 @@
   padding: 7px 10px;
   font-family: var(--button-font);
   font-size: 8px;
-  font-weight: 600px;
+  font-weight: 600;
   background-color: transparent;
   border: 2px solid var(--active);
   border-radius: 8px;
@@ -41,9 +41,13 @@
 //   Звичайна кнопка   //
 
 .button {
+  padding: 12px 34px;
+
   font-family: var(--button-font);
-  font-size: 8px;
+  font-size: 12px;
+  font-weight: 600;
   background-color: var(--active);
+  border: 0;
   border-radius: 8px;
   color: #000;
   transition: color var(--transition-dur-and-func),
@@ -64,12 +68,18 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .button {
+    font-size: 14px;
+  }
+}
+
 //   Кнопка тільки з текстом  //
 
 .button-text-only {
   font-family: var(--button-font);
   font-size: 8px;
-  font-weight: 600px;
+  font-weight: 600;
   text-decoration: underline;
   background-color: transparent;
   color: var(--active);
