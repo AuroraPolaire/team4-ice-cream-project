@@ -111,7 +111,11 @@
         </button>
       </li>
       <li class="btn__contacts-item">
-        <button class="button-with-border btn__contacts">
+        <button
+          class="button-with-border btn__contacts"
+          type="button"
+          data-modal-open
+        >
           Franchise
           <svg class="btn__contacts--arrow-icon" width="12" height="12">
             <use href="./images/icons.svg#icon-greater-sign2"></use>
@@ -121,3 +125,59 @@
     </ul>
   </div>
 </section>
+
+<!-- BACKDROP -->
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="backdrop__modal">
+    <button class="close-button" type="button" data-modal-close>
+      <svg class="icon-close-button" width="11" height="11">
+        <use href="./images/icons.svg#icon-greater-sign2"></use>
+      </svg>
+    </button>
+
+    <!-- MODAL-FORM -->
+
+    <form class="form">
+      <strong class="form__title"
+        >Thank you for your interest in owning an Ice Cream shop</strong
+      >
+      <p>
+        Due to the overwhelming volume of franchise requests we are not
+        accepting new franchisee applications at this time. Once the application
+        process resumes, we will contact you for further information. Please
+        fill out the contact information below and we will reach out for
+        additional information. We appreciate your patience.
+      </p>
+      <div class="form__field field">
+        <label class="field__name" for="name">Name</label>
+        <span class="field__wrap"
+          ><input class="form__input" id="name" name="name" type="text" />
+        </span>
+      </div>
+      <div class="form__field field">
+        <label class="field__name" for="tel">Phone</label>
+        <span class="field__wrap"
+          ><input id="tel" name="tel" class="form__input" type="tel" />
+        </span>
+      </div>
+      <div class="form__field field">
+        <label class="field__name" for="email">Email</label>
+        <span class="field__wrap"
+          ><input class="form__input" id="email" name="email" type="email" />
+        </span>
+      </div>
+      <div class="form__field field">
+        <label class="field__name" for="textarea">Comment</label>
+        <textarea
+          class="field__textarea"
+          name="textarea"
+          id="textarea"
+          rows="8"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button class="form__button--submit" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
