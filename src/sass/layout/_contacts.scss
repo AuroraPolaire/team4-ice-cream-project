@@ -208,40 +208,29 @@
     justify-content: center;
   }
 }
-
-// .form__button--submit {
-//   display: block;
-//   padding: 10px 52px;
-//   border-radius: 4px;
-//   margin: 30px auto 0 auto;
-//   background-color: var(--accent-1);
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//   cursor: pointer;
-//   font-weight: 700;
-//   font-size: 16px;
-//   line-height: 1.88;
-//   letter-spacing: 0.06em;
-//   text-align: center;
-//   color: var(--text-light);
-//   font-family: inherit;
-//   border: none;
-//   transition-property: background-color;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// }
-
 // ------------------INDIAN GUY MODALS---------
 
 .btnc:active {
   transform: scale(0.9);
 }
 
-.form{
+.form {
   text-align: center;
 }
 
-.field__name{
-display: none;
+.field__name {
+  color: var(--text-dark);
+  position: absolute;
+  top: 8px;
+  left: 12px;
+}
+
+.form__input:focus .field__name {
+  display: none;
+}
+
+.form__field {
+  position: relative;
 }
 
 .form__field:not(:last-child) {
@@ -301,7 +290,7 @@ display: none;
   align-items: center;
   padding: 28px;
   overflow: hidden;
-  @media screen and(min-width:768){
+  @media screen and (min-width:768){
     width: 568px;
     height: 668px;
   }
@@ -355,8 +344,6 @@ display: none;
 .field__textarea {
   height: 64px;
 }
-
-
 
 .form__button--submit {
   display: inline-block;
