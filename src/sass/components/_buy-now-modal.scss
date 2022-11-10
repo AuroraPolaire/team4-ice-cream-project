@@ -138,7 +138,7 @@
 .buy-modal__phone-input,
 .buy-modal__comment-input {
   width: 100%;
-  padding: 12px 8px;
+  padding-left: 12px;
   background-color: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
@@ -166,10 +166,6 @@
 .buy-modal__comment-input {
   resize: none;
   height: 65px;
-
-  &::placeholder {
-    font-size: 14px;
-  }
 }
 
 .buy-modal__name-input,
@@ -197,7 +193,7 @@
   .buy-modal__phone-input,
   .buy-modal__comment-input {
     width: 368px;
-    padding: 16px 11px;
+    padding-left: 15px;
   }
 
   .buy-modal__list {
