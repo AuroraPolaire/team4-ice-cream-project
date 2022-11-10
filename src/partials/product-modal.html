@@ -1,0 +1,94 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="product-modal">
+    <button type="button" class="buy-modal__close-btn" data-modal-close>
+      <svg width="16" height="16" aria-label="Закрити">
+        <use href="./images/icons.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <h1 class="product-modal__title">Chololate icecream</h1>
+    <div class="product-modal__picture-box">
+      <picture>
+        <source
+          srcset="
+            ./images/modal_pictures/buy_now/products-modal.png    1x,
+            ./images/modal_pictures/buy_now/products-modal@2x.png 2x
+          "
+        />
+        <img
+          src="./images/modal_pictures/buy_now/products-modal.png"
+          alt="icecream"
+          class="product-modal__picture"
+        />
+      </picture>
+    </div>
+    <ul class="products-modal__list">
+      <li class="products-modal__item products-modal__item--kcal">kcal</li>
+      <li class="products-modal__item products-modal__item--prot">Protein</li>
+      <li class="products-modal__item products-modal__item--fats">Fats</li>
+      <li class="products-modal__item products-modal__item--carbs">Carbs</li>
+    </ul>
+    <h2 class="products-modal__title2">Ingredients</h2>
+    <table class="products-modal__table">
+      <tr>
+        <td>Milk</td>
+        <td>100ml</td>
+      </tr>
+      <tr>
+        <td>Belgian chocolate</td>
+        <td>20g</td>
+      </tr>
+      <tr>
+        <td>Cream</td>
+        <td>150ml</td>
+      </tr>
+      <tr>
+        <td>Cocoa powder</td>
+        <td>30g</td>
+      </tr>
+      <tr>
+        <td>Sugar</td>
+        <td>40g</td>
+      </tr>
+      <tr>
+        <td>Vanilla sugar</td>
+        <td>10g</td>
+      </tr>
+    </table>
+    <div class="buy-modal__form-box">
+      <form name="buy-modal-form" class="buy-modal__form">
+        <label>
+          <input
+            class="buy-modal__name-input"
+            type="text"
+            name="user_name"
+            required
+            pattern="[a-zA-Zа-яА-ЯіІїЇʼҐґєЄ]+"
+            autocomplete="off"
+            placeholder="Name"
+          />
+        </label>
+        <label>
+          <input
+            class="buy-modal__phone-input"
+            type="tel"
+            name="user-phone-number"
+            required
+            autocomplete="off"
+            placeholder="Phone"
+          />
+        </label>
+        <label>
+          <textarea
+            class="buy-modal__comment-input"
+            name="comment"
+            placeholder="Comment"
+          >
+          </textarea>
+        </label>
+        <button type="button" class="button buy-modal__button" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
