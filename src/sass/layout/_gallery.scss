@@ -10,10 +10,110 @@
     padding-top: 20px;
 }
 
+.gallery{
+    position: relative;
+}
+
+.gallery__item {
+    position: absolute;
+        width: 100%;
+         left: 0;
+  top: 0;
+  
+    &:first-child {
+        animation: fade1 12s linear infinite;
+    }
+
+    &:nth-child(2){
+        animation: fade2 12s linear infinite;
+    }
+
+    &:last-child {
+        animation: fade3 12s linear infinite;
+    }
+}
+
+@keyframes fade1 {
+    0% {
+        visibility: visible;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    75% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes fade2 {
+    0% {
+        visibility: hidden;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: visible;
+    }
+
+    75% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes fade3 {
+    0% {
+        visibility: hidden;
+    }
+
+    25% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    75% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes zoom-out {
+
+    100% {
+        width: 100%;
+    }
+}
+
+
 .gallery__img {
     display: block;
     border-radius: 7.41px;
     overflow: hidden;
+
+    width: 110%;
+    animation: zoom-out 12s linear infinite;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -37,7 +137,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .mergening-sections {
-            
+
             background: url(./../images/bg-icecream-768@2x.jpg) 0px 184px no-repeat,
                 linear-gradient(to top, var(--background-color) 100%, var(--background-color) 100%);
 
