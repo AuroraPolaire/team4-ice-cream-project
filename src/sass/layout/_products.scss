@@ -7,8 +7,8 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .section-products {
     background-image: url('./../images/bg-icecream-320@2x.jpg');
   }
@@ -64,20 +64,47 @@
   padding: 123px 40px 20px 40px;
 }
 
-/* TABLET VERSION */
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
   .section-products {
-    background-image: url('./../images/bg-icecream-768@1x.jpg');
-    background-size: cover;
+    background-image: url(./../images/bg-icecream-768@1x.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .section-products {
-      background-image: url('./../images/bg-icecream-768@2x.jpg');
+      background-image: url(./../images/bg-icecream-768@2x.jpg);
     }
   }
+}
+
+@media screen and (min-width: 769px) {
+.section-products {
+    background-image: url(./../images/bg-icecream-1200@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .section-products {
+      background-image: url(./../images/bg-icecream-1200@2x.jpg);
+    }
+  }
+
+}
+
+// >1200px
+@media screen and (min-width: 1201px) {
+  .section-products {
+    background-size: cover;
+  }
+}
+
+
+
+/* TABLET VERSION */
+@media screen and (min-width: 768px) {
 
   .product-list {
     flex-direction: row;
@@ -104,8 +131,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .section-products {
       background-image: url('./../images/bg-icecream-1200@2x.jpg');
     }
