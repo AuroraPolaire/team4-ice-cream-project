@@ -15,10 +15,7 @@
 }
 
 .gallery__item {
-    position: absolute;
-        width: 100%;
-         left: 0;
-  top: 0;
+  
   
     &:first-child {
         animation: fade1 12s linear infinite;
@@ -26,10 +23,18 @@
 
     &:nth-child(2){
         animation: fade2 12s linear infinite;
+        position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
     }
 
     &:last-child {
         animation: fade3 12s linear infinite;
+        position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
     }
 }
 
