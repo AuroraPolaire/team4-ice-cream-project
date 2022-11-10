@@ -223,10 +223,15 @@
 
   @media screen and (min-width: 768px) {
       margin-bottom: 200px;
+      font-size: 34px;
+      line-height: 1.265;
   }
 
   @media screen and (min-width: 1200px) {
       margin-bottom: 303px;
+      font-size: 36px;
+      line-height: 1.25;
+      letter-spacing: 0.06em;
   }
 }
 // ---------------------------------------------
@@ -238,7 +243,9 @@ screen and (-webkit-min-device-pixel-ratio: 1),
 screen and (min-resolution: 96dpi),
 screen and (min-resolution: 1dppx) {
   .product-list .product-1::before {
-    background-image: url('../images/products/ice-cream-tablet.png');
+    background: url('../images/products/ice-cream-tablet.png') 0px -11.32px no-repeat,
+      linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
+      #D9D9D9;
   }
 }
 
@@ -247,7 +254,7 @@ screen and (-webkit-min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
   .product-list .product-1::before {
-    background-image: url('../images/products/ice-cream-tablet@2x.png');
+    background: url('../images/products/ice-cream-tablet@2x.png') 0px -11.32px no-repeat, linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
   }
 }
 
@@ -256,7 +263,7 @@ screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 1200px),
 screen and (min-resolution: 96dpi) and (min-width: 1200px),
 screen and (min-resolution: 1dppx) and (min-width: 1200px) {
   .product-list .product-1::before {
-    background-image: url('../images/products/ice-cream-desktop.png');
+    background: url('../images/products/ice-cream-desktop.png') 0px -17.3px no-repeat, linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
   }
 }
 
@@ -265,7 +272,7 @@ screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
 screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .product-list .product-1::before {
-    background-image: url('../images/products/ice-cream-desktop@2x.png');
+    background: url('../images/products/ice-cream-desktop@2x.png') 0px -17.3px no-repeat, linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
   }
 }
 
@@ -275,7 +282,7 @@ screen and (-webkit-min-device-pixel-ratio: 1),
 screen and (min-resolution: 96dpi),
 screen and (min-resolution: 1dppx) {
   .product-list .product-2::before {
-    background-image: url('../images/products/coffee-tablet.png');
+    background: url('../images/products/coffee-tablet.png') 0px -11.32px no-repeat, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
   }
 }
 
@@ -283,8 +290,8 @@ screen and (min-resolution: 1dppx) {
 screen and (-webkit-min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
-  .product-list  .product-2::before {
-    background-image: url('../images/products/coffee-tablet@2x.png');
+  .product-list .product-2::before {
+    background: url('../images/products/coffee-tablet@2x.png') 0px -11.32px no-repeat, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
   }
 }
 
@@ -292,8 +299,8 @@ screen and (min-resolution: 2dppx) {
 screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 1200px),
 screen and (min-resolution: 96dpi) and (min-width: 1200px),
 screen and (min-resolution: 1dppx) and (min-width: 1200px) {
-  .product-list  .product-2::before {
-    background-image: url('../images/products/coffee-desktop.png');
+  .product-list .product-2::before {
+    background: url('../images/products/coffee-desktop.png') 0px -17.3px no-repeat, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
   }
 }
 
@@ -301,8 +308,8 @@ screen and (min-resolution: 1dppx) and (min-width: 1200px) {
 screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
 screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .product-list  .product-2::before {
-    background-image: url('../images/products/coffee-desktop@2x.png');
+  .product-list .product-2::before {
+    background: url('../images/products/coffee-desktop@2x.png') 0px -17.3px no-repeat, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
   }
 }
 
@@ -312,7 +319,7 @@ screen and (-webkit-min-device-pixel-ratio: 1),
 screen and (min-resolution: 96dpi),
 screen and (min-resolution: 1dppx) {
   .product-list .product-3::before {
-    background-image: url('../images/products/milkshake-tablet.png');
+    background: url('../images/products/milkshake-tablet.png') 0px -11.32px no-repeat, linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
   }
 }
 
@@ -321,7 +328,7 @@ screen and (-webkit-min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
   .product-list .product-3::before {
-    background-image: url('../images/products/milkshake-tablet@2x.png');
+    background: url('../images/products/milkshake-tablet@2x.png') 0px -11.32px no-repeat, linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
   }
 }
 
@@ -329,8 +336,8 @@ screen and (min-resolution: 2dppx) {
 screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 1200px),
 screen and (min-resolution: 96dpi) and (min-width: 1200px),
 screen and (min-resolution: 1dppx) and (min-width: 1200px) {
-  .product-list  .product-3::before {
-    background-image: url('../images/products/milkshake-desktop.png');
+  .product-list .product-3::before {
+    background: url('../images/products/milkshake-desktop.png') 0px -17.3px no-repeat, linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
   }
 }
 
@@ -338,7 +345,7 @@ screen and (min-resolution: 1dppx) and (min-width: 1200px) {
 screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
 screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .product-list  .product-3::before {
-    background-image: url('../images/products/milkshake-desktop@2x.png');
+  .product-list .product-3::before {
+    background: url('../images/products/milkshake-desktop@2x.png') 0px -17.3px no-repeat, linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
   }
 }
