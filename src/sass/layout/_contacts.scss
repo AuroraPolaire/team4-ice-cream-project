@@ -1,5 +1,4 @@
 .contacts {
-  // background-color: var(--background-color);
   padding-bottom: 40px;
   position: relative;
   @media screen and (min-width: 1200px) {
@@ -46,7 +45,7 @@
   box-shadow: 0 8 30 rgba(212, 20, 67, 0.1);
   padding: 40px 32px;
 
-  width: 280px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
