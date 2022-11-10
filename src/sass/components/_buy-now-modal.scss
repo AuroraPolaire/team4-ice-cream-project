@@ -1,31 +1,5 @@
 .buy-modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   padding: 28px;
-
-  width: 280px;
-  background-color: #fcfcfc;
-  border: 2px solid var(--accent-2);
-  border-radius: 10px;
-
-  transform: translate(-50%, -50%) scale(1);
-  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 768px) {
-  .buy-modal {
-    width: 568px;
-  }
-}
-
-.buy-modal__close-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background-color: transparent;
-  border: 0;
-  padding: 0;
 }
 
 .buy-modal__title {
