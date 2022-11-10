@@ -107,8 +107,7 @@
   top: -60px;
   left: -2;
   content: ' ';
-  background: url('../images/modal_pictures/buy_now/buy-now-modal-ice-milkshake.png')
-      0px -7.5px no-repeat,
+  background: url('../images/products/milkshake-modal.png') 0px -7.5px no-repeat,
     linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
 
   background-size: contain;
@@ -120,7 +119,7 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .buy-modal__item--brown::before {
-    background: url('../images/products/milkshake-tablet@2x.png') 0px -7.5px no-repeat,
+    background: url('../images/products/milkshake-modal@2x.png') 0px -7.5px no-repeat,
       linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
   }
 }
