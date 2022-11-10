@@ -279,24 +279,26 @@
   right: 8px;
   background: none;
   border: none;
+  
+  @media screen and (min-width: 768px) {
+    top: 20px;
+    right: 20px;
+  }
 }
 
 .modal-contact {
-  @media screen and (max-width: 767px) {
-    width: 280px;
-    height: 674px;
-  }
-  
+  width: 100%;
+  height: 100%;
   position: fixed;
   top: -50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: top 0.3s ease-in-out;
-  border: 1px solid #ccc;
-  border-radius: 10px;
   z-index: 50000;
   background-color: #fff;
   overflow: auto;
+  opacity: 1;
+  background: rgba(91, 63, 63, 0.2);
 }
 
 .modal-contact.active {
@@ -324,15 +326,37 @@
 }
 
 .modal-contact__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 28px;
-  overflow: hidden;
-  @media screen and (min-width:768){
+  overflow: auto;
+  width: 280px;
+  height: 365px;
+  background-color: #fff;
+  border: 2px solid #F8D24E;
+  border-radius: 10px;
+
+  &--maps {
+    @media screen and (min-width:768px){
     width: 568px;
-    height: 668px;
+    height: 458px;
   }
+  }
+
+  &--form {
+    height: 660px;
+    
+    @media screen and (min-width: 768px) {
+      width: 568px;
+      height: 628px;
+    }
+  }
+  
 }
 
 .map__container {
@@ -408,12 +432,12 @@
   text-align: center;
 }
 
-.modal-maps {
-  @media screen and (max-width: 767px) {
-  height: 365px;
-  width: 280px; 
-  }
-}
+// .modal-maps {
+//   @media screen and (max-width: 767px) {
+//   height: 365px;
+//   width: 280px; 
+//   }
+// }
 
 .close-modal-contacts:hover .icon-close-button {
   fill: var(--hover);
@@ -425,10 +449,10 @@
   .modal-contact__container {
       padding: 32px 60px;
   }
-  .modal-maps {
-    width: 568px;
-    height: 458px;
-  }
+  // .modal-maps {
+  //   width: 568px;
+  //   height: 458px;
+  // }
 
   .map__container {
     width: 468px;
@@ -439,11 +463,6 @@
   .modal-contact__title {
     margin-bottom: 32px;
     font-size: 20px;
-  }
-
-  .modal-franchize {
-    width: 558px;
-    height: 647px;
   }
 
   .form__title {
