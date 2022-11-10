@@ -1,5 +1,15 @@
 .header {
     background-color: var(--background-color);
+    padding-top: 12px;
+
+    
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 8px;
+  }
 }
 
 .header__container {
@@ -7,6 +17,8 @@
     align-items: center;
     justify-content: space-between;
 }
+
+
 
 .navigation__link {
     color: var(--text-light);
@@ -47,10 +59,7 @@
     align-items: center;
     justify-content: center;
     min-width: 152px;
-    padding: 12px 34px;
-    border: none;
     text-align: center;
-    font-weight: 600;
     font-size: 14px;
 }
 
@@ -65,17 +74,10 @@
 .header-btn {
     display: none;
 }
-
-.header {
-    padding-top: 12px;
-}
 }
 
 
 @media screen and (min-width: 768px) {
-.header {
-    padding-top: 20px;
-}
 
 .mobile-menu-btn {
     margin-left: auto;
@@ -91,9 +93,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-.header {
-    padding-top: 8px;
-}
 
 .navigation {
     display: flex;
