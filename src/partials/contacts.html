@@ -130,11 +130,11 @@
   </div>
 </section>
 
-<!-- MAPS -->
+<!-- MAPS MODAL -->
 
 <div class="modal-maps modal-contact" id="modal1">
   <div class="modal-contact__container">
-    <button class="btn close-modal">
+    <button class="btn close-modal close-modal-contacts">
       <svg class="icon-close-button" width="11" height="11">
         <use href="./images/icons.svg#icon-cross"></use>
       </svg>
@@ -149,15 +149,15 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-    <a class="map__btn" href="">Open map</a>
+    <button class="map__btn button">Open map</button>
   </div>
 </div>
 
-<!-- MODAL -->
+<!-- FORM MODAL -->
 
-<div class="modal modal-contact" id="modal2">
+<div class="modal-franchize modal-contact" id="modal2">
   <div class="modal-contact__container">
-    <button class="btn close-modal">
+    <button class="btn close-modal close-modal-contacts">
       <svg class="icon-close-button" width="11" height="11">
         <use href="./images/icons.svg#icon-cross"></use>
       </svg>
@@ -175,33 +175,27 @@
         additional information. We appreciate your patience.
       </p>
       <div class="form__field field">
+        <input class="form__input" id="name" name="name" type="text" />
         <label class="field__name" for="name">Name</label>
-        <span class="field__wrap"
-          ><input class="form__input" id="name" name="name" type="text" />
-        </span>
       </div>
       <div class="form__field field">
+        <input id="tel" name="tel" class="form__input" type="tel" />
         <label class="field__name" for="tel">Phone</label>
-        <span class="field__wrap">
-          <input id="tel" name="tel" class="form__input" type="tel" />
-        </span>
       </div>
       <div class="form__field field">
+        <input class="form__input" id="email" name="email" type="email" />
         <label class="field__name" for="email">Email</label>
-        <span class="field__wrap"
-          ><input class="form__input" id="email" name="email" type="email" />
-        </span>
       </div>
       <div class="form__field field">
-        <label class="field__name" for="textarea">Comment</label>
         <textarea
           class="field__textarea"
           name="textarea"
           id="textarea"
           rows="8"
         ></textarea>
+        <label class="field__name" for="textarea">Comment</label>
       </div>
-      <button class="form__button--submit" type="submit">Submit</button>
+      <button class="form__button--submit button" type="submit">Submit</button>
     </form>
   </div>
 </div>

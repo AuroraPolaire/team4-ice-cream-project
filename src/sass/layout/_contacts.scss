@@ -219,15 +219,30 @@
 }
 
 .field__name {
-  color: var(--text-dark);
   position: absolute;
   top: 8px;
   left: 12px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--text-dark);
+
+  transition: transform 0.5s ease-in-out;
+
+  @media screen and (min-width:768px) {
+    font-size: 14px;
+  }
 }
 
-.form__input:focus .field__name {
-  display: none;
+.form__input:focus + .field__name,
+.field__textarea:focus + .field__name {
+  transform: scale(0);
 }
+
+.form__input:hover,
+.field__textarea:hover {
+  cursor: url('./../images/cursor.png'), auto; 
+}
+
 
 .form__field {
   position: relative;
@@ -235,6 +250,9 @@
 
 .form__field:not(:last-child) {
   margin-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
 }
 
 .close-modal {
@@ -246,8 +264,11 @@
 }
 
 .modal-contact {
-  width: 280px;
-  height: 674px;
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    height: 674px;
+  }
+  
   position: fixed;
   top: -50%;
   left: 50%;
@@ -255,7 +276,7 @@
   transition: top 0.3s ease-in-out;
   border: 1px solid #ccc;
   border-radius: 10px;
-  z-index: 2;
+  z-index: 50000;
   background-color: #fff;
   overflow: auto;
 }
@@ -282,7 +303,6 @@
   color: var(--text-dark);
   margin-bottom: 20px;
 }
-
 
 .modal-contact__container {
   display: flex;
@@ -320,6 +340,11 @@
   font-family: 'Montserrat';
   color: var(--text-dark);
   text-align: center;
+  border: none;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .form__input,
@@ -329,6 +354,7 @@
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84A178;
   border-radius: 10px;
+  padding-left: 15px;
 }
 
 .form__info {
@@ -338,7 +364,11 @@
   color: var(--text-dark);
   margin-bottom: 24px;
   text-align: left;
-  padding-top: 20px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 20px;
+  }
+
 }
 
 .field__textarea {
@@ -360,6 +390,67 @@
 }
 
 .modal-maps {
+  @media screen and (max-width: 767px) {
   height: 365px;
-  width: 280px;
+  width: 280px; 
+  }
+}
+
+.close-modal-contacts:hover .icon-close-button {
+  fill: var(--hover);
+}
+
+// -------------------TABLET MODAL STYLES---------
+
+@media screen and(min-width:768px) {
+  .modal-contact__container {
+      padding: 32px 60px;
+  }
+  .modal-maps {
+    width: 568px;
+    height: 458px;
+  }
+
+  .map__container {
+    width: 468px;
+    height: 260px;
+    margin-bottom: 32px;
+  }
+
+  .modal-contact__title {
+    margin-bottom: 32px;
+    font-size: 20px;
+  }
+
+  .modal-franchize {
+    width: 558px;
+    height: 647px;
+  }
+
+  .form__title {
+    font-size: 20px;
+    margin-bottom: 24px;
+    display: block;
+    width: 322px;
+    height: 84px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form__info {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  .form__field {
+    width: 368px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form__button--submit {
+    font-size: 14px;
+    margin-top: 16px;
+  }
+
 }
