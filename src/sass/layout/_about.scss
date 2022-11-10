@@ -263,31 +263,31 @@
   margin-left: 5px;
 }
 
-// BACKDROP
+// код для модального вікна йде у файлі _modal.scss. Не потрібно дублювати
 
-.about-modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+// .about-modal {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
 
-  width: 280px;
-  height: 459px;
-  padding: 28px;
-  background-color: var(--text-light);
-  border: 2px solid var(--accent-2);
-  border-radius: 10px;
+//   width: 280px;
+//   height: 459px;
+//   padding: 28px;
+//   background-color: var(--text-light);
+//   border: 2px solid var(--accent-2);
+//   border-radius: 10px;
 
-  transform: translate(-50%, -50%) scale(1);
+//   transform: translate(-50%, -50%) scale(1);
 
-  // transform: translate(-50%, -50%) scale(1);
-  // transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   // transform: translate(-50%, -50%) scale(1);
+//   // transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-width: 768px) {
-    width: 568px;
-    height: 449px;
-  }
-}
+//   @media screen and (min-width: 768px) {
+//     width: 568px;
+//     height: 449px;
+//   }
+// }
 
 .about-modal__close-btn {
   position: absolute;

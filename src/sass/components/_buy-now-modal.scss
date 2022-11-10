@@ -48,13 +48,21 @@
   top: -60px;
   left: -2;
   content: ' ';
-  background: url('../images/modal_pictures/buy_now/buy-now-modal-ice-cream.png')
-      0px -7.5px no-repeat,
+  background: url('../images/products/ice-cream-modal.png') 0px -7.5px no-repeat,
     linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
 
   background-size: contain;
   border-radius: 98.6301px;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .buy-modal__item--green::before {
+    background: url('../images/products/ice-cream-modal@2x.png') 0px -7.5px no-repeat,
+      linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+  }
 }
 
 .buy-modal__item--yellow {
@@ -69,13 +77,21 @@
   top: -60px;
   left: 0;
   content: ' ';
-  background: url('../images/modal_pictures/buy_now/buy-now-modal-ice-coffee.png')
-      0px -7.5px no-repeat,
+  background: url('../images/products/coffee-modal.png') 0px -7.5px no-repeat,
     linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
 
   background-size: contain;
   border-radius: 98.6301px;
   box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .buy-modal__item--yellow::before {
+    background: url('../images/products/coffee-modal@2x.png') 0px -7.5px no-repeat,
+      linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+  }
 }
 
 .buy-modal__item--brown {
@@ -98,6 +114,15 @@
   background-size: contain;
   border-radius: 98.6301px;
   box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .buy-modal__item--brown::before {
+    background: url('../images/products/milkshake-tablet@2x.png') 0px -7.5px no-repeat,
+      linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+  }
 }
 
 .buy-modal__form-box {
