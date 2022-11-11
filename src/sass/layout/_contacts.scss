@@ -335,9 +335,8 @@
   padding: 28px;
   overflow: auto;
   width: 280px;
-  height: 365px;
   background-color: #fff;
-  border: 2px solid #F8D24E;
+  border: 2px solid var(--accent-2);
   border-radius: 10px;
 
   &--maps {
