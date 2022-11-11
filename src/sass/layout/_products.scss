@@ -168,9 +168,12 @@
   letter-spacing: 0.04em;
 }
 
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
+
   .section-products {
     background-image: url(./../images/bg-icecream-768@1x.jpg);
+    background-size: auto;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -185,6 +188,7 @@
 @media screen and (min-width: 768px) {
 .section-products {
     background-image: url(./../images/bg-icecream-1200@1x.jpg);
+    background-size: auto;
   }
 
   @media (min-device-pixel-ratio: 2),
