@@ -1,13 +1,10 @@
 .section-products {
-  // ЗМІНИЛА ПАДІНГИ ДЛЯ МОБІЛКИ---------------------------
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-image: url('./../images/bg-icecream-320@1x.jpg');
   background-size: contain;
-  // ДОДАЛА КОЛІР ТЕКСТУ НА СЕКЦІЮ----------------------------
   color: var(--text-dark);
-// ДОДАЛА ПАДІНГИ ДЛЯ ДЕСКТОПУ ТА ПЛАНШЕТУ ----------------------
   @media screen and (min-width: 768px) {
       padding-bottom: 82px;
     }
@@ -30,24 +27,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // ПОСТАВИЛА ГЕПИ БІЛЬШЕ, ТОМУ ЩО ВРАХУВАЛА ВИСОТУ ПСЕВДОЕЛЕМЕНТА
   gap: 164px;
 }
 
-.product-list__item {
-  // ТУТ POSITION ДЛЯ ПСЕВДОЕЛЕМЕНТІВ
-  position: relative;
-  width: 100%;
-  height: 420px;
-  border-radius: 24px;
+// .product-list__item {
+//   position: relative;
+//   width: 100%;
+//   height: 420px;
+//   border-radius: 24px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
 
-  margin-left: auto;
-  margin-right: auto;
-}
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 
 .product-list .product-1 {
   background: var(--accent-1-secondary);
@@ -81,52 +76,101 @@
 
 .product-name {
   text-transform: uppercase;
+  text-align: center;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
 }
 
-.arrow-icon {
-  border: 2px solid #131313;
-  display: inline;
-}
+.products-arrow-btn {
+  height: 16px;
+  position: relative;
+  background-color: transparent;
+  border: transparent;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    content: '';
+    width: 40px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/arrows/arrow-default.svg);
+  }
+  }
+
+// ЦЕЙ КОД НЕ ПРАЦЮЄ-------------------------
+  .products-arrow-btn:hover {
+    width: 50px;
+  }
+  
+  .products-arrow-btn:hover .products-arrow-btn::after {
+      background-image: url(../images/arrows/arrow-hover.svg);
+    }
+
+  .products-arrow-btn:focus .products-arrow-btn::after {
+      background-image: url(../images/arrows/arrow-focus.svg);
+    }
+    // -------------------------------------
+
 
 /* MOBILE VERSION */
 
 .product-list__item {
+  position: relative;
   width: 100%;
   height: 420px;
   padding: 123px 40px 20px 40px;
+  border-radius: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-left: auto;
+  margin-right: auto;
   
-  // ПОСТАВИЛА max-width ЩОБ НЕ РОЗТЯГУВАВСЯ ЕЛЕМЕНТ (З 480 У НАС ПО ТЗ ЗАКІНЧУЄТЬСЯ ГУМОВА ВЕРСТКА)
     @media screen and (min-width: 480px) and (max-width: 767px) {
       max-width: 280px;
     }
 
   &::before {
       position: absolute;
-      z-index: 1000;
+      z-index: 10;
       width: 200px;
-      height: 200px;
-      // TODO: до 480 (на гумовій верстці) відображається неправильно - адаптувати ширину та висоту, а також позиціонування і закруглення, під гумову верстку
-      left: 40px;
-      top: -97px;
+      height: 208px;
+      top: -120px;
+      left: 50%;
+      transform: translateX(-50%);
       content: ' ';
       background-size: contain;
       border-radius: 101.325px;
 
-      @media screen and (min-width: 768px) {
-            left: 12px;
-        }
-
       @media screen and (min-width: 1200px) {
-          left: 34px;
+          top: -183.17px;
           width: 300px;
-          height: 300px;
+          height: 317.3px;
           border-radius: 150px;
       }
   }
 }
 
+.product-description {
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 14px;
+  line-height: 1.78;
+  letter-spacing: 0.04em;
+}
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
   .section-products {
     background-image: url(./../images/bg-icecream-768@1x.jpg);
     background-size: auto;
@@ -158,11 +202,11 @@
 }
 
 // >1200px
-@media screen and (min-width: 1200px) {
-  .section-products {
-    background-size: cover;
-  }
-}
+// @media screen and (min-width: 1200px) {
+//   .section-products {
+//     background-size: cover;
+//   }
+// }
 
 
 
@@ -179,18 +223,21 @@
   .product-list__item {
     width: calc((100% - 32px) / 3);
     height: 428px;
+    padding: 106px 26px 20px 26px;
   }
 
-  .product-list__item {
-    width: 100%;
-    padding: 106px 39px 20px 39px;
-  }
+  .product-name {
+    font-size: 22px;
+    line-height: 1.3;
+    margin-bottom: 40px;
+}
 }
 
 /* DESKTOP VERSION */
 @media screen and (min-width: 1200px) {
   .section-products {
     background-image: url('./../images/bg-icecream-1200@1x.jpg');
+    background-size: cover;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -204,15 +251,27 @@
   .product-list__item {
     width: calc((100% - 32px) / 3);
     height: 535px;
+    padding: 166.16px 64px 60px 64px;
   }
 
   .product-list__item-wrap {
     width: 100%;
     padding: 166px 60px 60px 60px;
   }
+
+  .product-name {
+    font-size: 30px;
+    line-height: 1.23;
+    margin-bottom: 65px;
 }
 
-// ДОДАЛА ---------------------------------
+  .product-description {
+    font-size: 16px;
+    line-height: 1.75;
+}
+}
+
+// TITLE
 .section-products-h1 {
   text-align: center;
   letter-spacing: 0.04em;
@@ -237,7 +296,7 @@
   }
 }
 // ---------------------------------------------
-
+// PSEUDOELEMENT RETINA IMAGES
 // ICE-CREAM MEDIA RULES
 
 @media screen and (min-device-pixel-ratio: 1),
@@ -245,7 +304,7 @@ screen and (-webkit-min-device-pixel-ratio: 1),
 screen and (min-resolution: 96dpi),
 screen and (min-resolution: 1dppx) {
   .product-list .product-1::before {
-    background: url('../images/products/ice-cream-tablet.png') 0px -11.32px no-repeat,
+    background: url('../images/products/ice-cream-tablet.png') 0px -0.32px no-repeat,
       linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
       #D9D9D9;
   }
@@ -256,7 +315,8 @@ screen and (-webkit-min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
   .product-list .product-1::before {
-    background: url('../images/products/ice-cream-tablet@2x.png') 0px -11.32px no-repeat, linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    background: url('../images/products/ice-cream-tablet@2x.png') 0px -0.32px no-repeat, linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    background-size: contain;
   }
 }
 
@@ -265,7 +325,7 @@ screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 1200px),
 screen and (min-resolution: 96dpi) and (min-width: 1200px),
 screen and (min-resolution: 1dppx) and (min-width: 1200px) {
   .product-list .product-1::before {
-    background: url('../images/products/ice-cream-desktop.png') 0px -17.3px no-repeat, linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    background: url('../images/products/ice-cream-desktop.png') 0px -0.3px no-repeat, linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
   }
 }
 
@@ -274,7 +334,8 @@ screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
 screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .product-list .product-1::before {
-    background: url('../images/products/ice-cream-desktop@2x.png') 0px -17.3px no-repeat, linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    background: url('../images/products/ice-cream-desktop@2x.png') 0px -0.3px no-repeat, linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    background-size: contain;
   }
 }
 
@@ -284,7 +345,7 @@ screen and (-webkit-min-device-pixel-ratio: 1),
 screen and (min-resolution: 96dpi),
 screen and (min-resolution: 1dppx) {
   .product-list .product-2::before {
-    background: url('../images/products/coffee-tablet.png') 0px -11.32px no-repeat, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    background: url('../images/products/coffee-tablet.png') 0px -0.32px no-repeat, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
   }
 }
 
@@ -293,7 +354,8 @@ screen and (-webkit-min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
   .product-list .product-2::before {
-    background: url('../images/products/coffee-tablet@2x.png') 0px -11.32px no-repeat, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    background: url('../images/products/coffee-tablet@2x.png') 0px -0.32px no-repeat, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    background-size: contain;
   }
 }
 
@@ -302,7 +364,7 @@ screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 1200px),
 screen and (min-resolution: 96dpi) and (min-width: 1200px),
 screen and (min-resolution: 1dppx) and (min-width: 1200px) {
   .product-list .product-2::before {
-    background: url('../images/products/coffee-desktop.png') 0px -17.3px no-repeat, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    background: url('../images/products/coffee-desktop.png') 0px -0.3px no-repeat, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
   }
 }
 
@@ -311,7 +373,8 @@ screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
 screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .product-list .product-2::before {
-    background: url('../images/products/coffee-desktop@2x.png') 0px -17.3px no-repeat, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    background: url('../images/products/coffee-desktop@2x.png') 0px -0.3px no-repeat, linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    background-size: contain;
   }
 }
 
@@ -321,7 +384,7 @@ screen and (-webkit-min-device-pixel-ratio: 1),
 screen and (min-resolution: 96dpi),
 screen and (min-resolution: 1dppx) {
   .product-list .product-3::before {
-    background: url('../images/products/milkshake-tablet.png') 0px -11.32px no-repeat, linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    background: url('../images/products/milkshake-tablet.png') 0px -0.32px no-repeat, linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
   }
 }
 
@@ -330,7 +393,8 @@ screen and (-webkit-min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
   .product-list .product-3::before {
-    background: url('../images/products/milkshake-tablet@2x.png') 0px -11.32px no-repeat, linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    background: url('../images/products/milkshake-tablet@2x.png') 0px -0.32px no-repeat, linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    background-size: contain;
   }
 }
 
@@ -339,7 +403,7 @@ screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 1200px),
 screen and (min-resolution: 96dpi) and (min-width: 1200px),
 screen and (min-resolution: 1dppx) and (min-width: 1200px) {
   .product-list .product-3::before {
-    background: url('../images/products/milkshake-desktop.png') 0px -17.3px no-repeat, linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    background: url('../images/products/milkshake-desktop.png') 0px -0.3px no-repeat, linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
   }
 }
 
@@ -348,6 +412,7 @@ screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
 screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .product-list .product-3::before {
-    background: url('../images/products/milkshake-desktop@2x.png') 0px -17.3px no-repeat, linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    background: url('../images/products/milkshake-desktop@2x.png') 0px -0.3px no-repeat, linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    background-size: contain;
   }
 }
