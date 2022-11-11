@@ -84,10 +84,40 @@
   letter-spacing: 0.04em;
 }
 
-.arrow-icon {
-  border: 2px solid #131313;
-  display: inline;
-}
+.products-arrow-btn {
+  height: 16px;
+  position: relative;
+  background-color: transparent;
+  border: transparent;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    content: '';
+    width: 40px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/arrows/arrow-default.svg);
+  }
+  }
+
+// ЦЕЙ КОД НЕ ПРАЦЮЄ-------------------------
+  .products-arrow-btn:hover {
+    width: 50px;
+  }
+  
+  .products-arrow-btn:hover .products-arrow-btn::after {
+      background-image: url(../images/arrows/arrow-hover.svg);
+    }
+
+  .products-arrow-btn:focus .products-arrow-btn::after {
+      background-image: url(../images/arrows/arrow-focus.svg);
+    }
+    // -------------------------------------
+
 
 /* MOBILE VERSION */
 
