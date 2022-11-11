@@ -90,10 +90,17 @@
 
     gap: 7px;
 
+    // transition: box-shadow var(--transition-dur-and-func);
+
 @media screen and (max-width: 767px) {
     display: none;
-    }
+
 }
+}
+    // .header-btn:hover,
+    // .header-btn:focus {
+    //    box-shadow: 0 2px 15px 15px rgba(174, 198, 165, 0.5);
+    // }
 
 .header-btn__icon {
     fill: currentColor;
