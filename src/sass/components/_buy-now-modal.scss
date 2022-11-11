@@ -62,6 +62,7 @@
   .buy-modal__item--green::before {
     background: url('../images/products/ice-cream-modal@2x.png') 0px -7.5px no-repeat,
       linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+    background-size: contain;
   }
 }
 
@@ -91,6 +92,7 @@
   .buy-modal__item--yellow::before {
     background: url('../images/products/coffee-modal@2x.png') 0px -7.5px no-repeat,
       linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    background-size: contain;
   }
 }
 
@@ -121,6 +123,7 @@
   .buy-modal__item--brown::before {
     background: url('../images/products/milkshake-modal@2x.png') 0px -7.5px no-repeat,
       linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    background-size: contain;
   }
 }
 
