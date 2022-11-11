@@ -1,9 +1,17 @@
 .mergening-sections {
     width: 100%;
-    background:
-        url(./../images/bg-icecream-320@1x.jpg) 0px 150px no-repeat,
-        linear-gradient(to top, var(--background-color) 75%, var(--text-light) 75%, var(--text-light) 93%, var(--background-color) 75%);
+    background: url(./../images/bg-icecream-320@1x.jpg) 0px 150px no-repeat,
+        linear-gradient(var(--background-color) 0% 2%, var(--text-light) 2% 6.8%, var(--background-color) 6.8% 100%) 0 0 / contain;
     background-size: contain;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .mergening-sections {
+        background: url(./../images/bg-icecream-320@2x.jpg) 0px 150px no-repeat,
+            linear-gradient(var(--background-color) 0% 2%, var(--text-light) 2% 6.8%, var(--background-color) 6.8% 100%) 0 0 / contain;
+    }
 }
 
 .gallery__section {
@@ -32,8 +40,6 @@
     }
 }
 
-
-
 .gallery__img {
     display: block;
     width: 110%;
@@ -41,20 +47,29 @@
     border-radius: 7.41px;
 }
 
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+@media screen and (min-width: 321px) and (max-width: 475px) {
     .mergening-sections {
-        background: url(./../images/bg-icecream-320@2x.jpg) 0px 150px no-repeat,
-            linear-gradient(to top, var(--background-color) 75%, var(--text-light) 75%, var(--text-light) 93%, var(--background-color) 75%);
+        background: url(./../images/bg-icecream-768@1x.jpg) 0px 95px no-repeat,
+            linear-gradient(to top, var(--background-color) 100%, var(--background-color) 100%);
+
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .mergening-sections {
+            background: url(./../images/bg-icecream-768@2x.jpg) 0px 95px no-repeat,
+                linear-gradient(to top, var(--background-color) 100%, var(--background-color) 100%);
+
+        }
     }
 }
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
+@media screen and (min-width: 475px) and (max-width: 768px) {
     .mergening-sections {
         background: url(./../images/bg-icecream-768@1x.jpg) 0px 184px no-repeat,
             linear-gradient(to top, var(--background-color) 100%, var(--background-color) 100%);
-        background-size: contain;
+
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -78,7 +93,7 @@
     .mergening-sections {
         background: url(./../images/bg-icecream-1200@1x.jpg) 0px 137px no-repeat,
             linear-gradient(to top, var(--background-color) 100%, var(--background-color) 100%);
-        background-size: contain;
+        background-size: auto;
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -102,6 +117,6 @@
 // >1200px
 @media screen and (min-width: 1201px) {
     .mergening-sections {
-        background-size: cover;
+        background-size: contain;
     }
 }
