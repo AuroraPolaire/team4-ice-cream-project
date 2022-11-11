@@ -26,6 +26,15 @@
     }
 }
 
+.header__logo {
+    transition: transform var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+    transform: scale(1.1);
+    }
+}
+
 .navigation__list {
     display: flex;
     gap: 27px;
@@ -89,14 +98,20 @@
     font-size: 14px;
 
     gap: 7px;
+    transition: transform var(--transition-dur-and-func);
 
     // transition: box-shadow var(--transition-dur-and-func);
 
 @media screen and (max-width: 767px) {
     display: none;
+}
+}
 
+.header-btn:hover,
+.header-btn:focus {
+    transform: scale(1.1);
 }
-}
+
     // .header-btn:hover,
     // .header-btn:focus {
     //    box-shadow: 0 2px 15px 15px rgba(174, 198, 165, 0.5);
