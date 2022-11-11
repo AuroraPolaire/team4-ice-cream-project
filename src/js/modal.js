@@ -4,6 +4,10 @@
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
 
+    openProdModalBtns: document.querySelectorAll('[prod-modal-open]'),
+    closeProdModalBtn: document.querySelector('[prod-modal-close]'),
+    prodModal: document.querySelector('[prod-modal]'),
+
     openAboutModalBtn: document.querySelector('[data-about-modal-open]'),
     closeAboutModalBtn: document.querySelector('[data-about-modal-close]'),
     aboutModal: document.querySelector('[data-about-modal]'),
@@ -12,6 +16,11 @@
     el.addEventListener('click', toggleModal);
   });
   refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  refs.openProdModalBtns.forEach(el => {
+    el.addEventListener('click', toggleProdModal);
+  });
+  refs.closeProdModalBtn.addEventListener('click', toggleProdModal);
 
   refs.openAboutModalBtn.addEventListener('click', toggleAboutModal);
   refs.closeAboutModalBtn.addEventListener('click', toggleAboutModal);
@@ -22,6 +31,10 @@
 
   function toggleAboutModal() {
     refs.aboutModal.classList.toggle('is-hidden');
+  }
+
+  function toggleProdModal() {
+    refs.prodModal.classList.toggle('is-hidden');
   }
 })();
 
