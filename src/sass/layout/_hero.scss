@@ -318,6 +318,9 @@
 
   transition: width var(--transition-dur-and-func);
 }
+svg:not(:root) {
+  overflow: hidden;
+}
 
 .section-hero__arrow-btn {
   background-color: transparent;
