@@ -107,17 +107,23 @@
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../images/arrows/arrow-default.svg);
+
+    //додала збільшення
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
 // // ЦЕЙ КОД вже)) ПРАЦЮЄ-------------------------
 
 .products-arrow-btn:hover::after {
-  background-image: url(../images/arrows/arrow-hover.svg);
+  // background-image: url(../images/arrows/arrow-hover.svg);
+  transform: scale(1.4);
 }
 
 .products-arrow-btn:focus::after {
-  background-image: url(../images/arrows/arrow-focus.svg);
+  // background-image: url(../images/arrows/arrow-focus.svg);
+  transform: scale(1.4);
 }
 // -------------------------------------
 
