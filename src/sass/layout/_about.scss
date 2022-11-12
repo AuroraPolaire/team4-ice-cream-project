@@ -270,7 +270,7 @@
   font-size: 14px;
   line-height: 1.29;
 
-  transition: color var(--transition-dur-and-func);
+  // transition: color var(--transition-dur-and-func);
 
   @media screen and (min-width: 768px) {
     margin-left: 0;
@@ -282,19 +282,19 @@
   margin-left: 5px;
 }
 
-.about-modal__close-btn {
-  position: absolute;
-  right: 8px;
-  top: 8px;
+// .about-modal__close-btn {
+//   position: absolute;
+//   right: 8px;
+//   top: 8px;
 
-  width: 16px;
-  height: 16px;
-  background-color: transparent;
+//   width: 16px;
+//   height: 16px;
+//   background-color: transparent;
 
-  @media screen and (min-width: 768px) {
-    width: 20px;
-    height: 20px;
-    right: 20px;
-    top: 20px;
-  }
-}
+//   @media screen and (min-width: 768px) {
+//     width: 20px;
+//     height: 20px;
+//     right: 20px;
+//     top: 20px;
+//   }
+// }
