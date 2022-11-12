@@ -337,6 +337,7 @@
   background-color: #fff;
   border: 2px solid var(--accent-2);
   border-radius: 10px;
+  overflow-y: auto;
 
   &--maps {
     @media screen and (min-width:768px){
