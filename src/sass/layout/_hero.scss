@@ -215,7 +215,7 @@
 
   @media screen and (min-width: 768px) {
     transform: translateX(-5.5%);
-    top: 7%;
+    top: -5%;
   }
   @media screen and (min-width: 1200px) {
     transform: translateX(-38px);
@@ -285,10 +285,10 @@
     font-size: 14px;
     margin-bottom: 30px;
   }
-    &:hover .section-hero__stats-number {
-      color: var(--accent-2);
-      transform: rotateX(360deg);
-    }
+  &:hover .section-hero__stats-number {
+    color: var(--accent-2);
+    transform: rotateX(360deg);
+  }
 }
 .section-hero__stats-number {
   display: block;
