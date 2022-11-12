@@ -66,6 +66,14 @@
     bottom: -3px;
 }
 
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: url('./../images/cursor.png'), auto;
+
+    & :hover {
+        cursor: url('./../images/cursor.png'), auto;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .customer-reviews-section {
         padding-top: 60px;
