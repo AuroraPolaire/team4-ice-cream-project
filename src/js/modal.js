@@ -4,9 +4,9 @@
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
 
-    openProdModalBtns: document.querySelectorAll('[prod-modal-open]'),
-    closeProdModalBtn: document.querySelector('[prod-modal-close]'),
-    prodModal: document.querySelector('[prod-modal]'),
+    openProdModalBtns: document.querySelectorAll('[data-prod-modal-open]'),
+    closeProdModalBtn: document.querySelector('[data-prod-modal-close]'),
+    prodModal: document.querySelector('[data-prod-modal]'),
 
     openAboutModalBtn: document.querySelector('[data-about-modal-open]'),
     closeAboutModalBtn: document.querySelector('[data-about-modal-close]'),
