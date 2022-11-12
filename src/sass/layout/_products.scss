@@ -102,28 +102,27 @@
     top: 0;
     display: inline-block;
     content: '';
-    width: 60px;
+    width: 50px;
     height: 16px;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../images/arrows/arrow-default.svg);
 
-    //додала збільшення
-    transform: scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // transform: scale(1);
+    transition: left var(--transition-dur-and-func);
   }
 }
 
-// // ЦЕЙ КОД вже)) ПРАЦЮЄ-------------------------
-
 .products-arrow-btn:hover::after {
   // background-image: url(../images/arrows/arrow-hover.svg);
-  transform: scale(1.4);
+  // transform: scale(1.2);
+  left: 10;
 }
 
 .products-arrow-btn:focus::after {
   // background-image: url(../images/arrows/arrow-focus.svg);
-  transform: scale(1.4);
+  // transform: scale(1.3);
+  left: 10;
 }
 // -------------------------------------
 
