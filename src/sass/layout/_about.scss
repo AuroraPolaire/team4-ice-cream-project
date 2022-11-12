@@ -70,23 +70,15 @@
 .about-description {
   padding-top: 340px;
 
-  @media screen and (max-width: 767px) {
-    // padding-left: 23px;
-    // padding-right: 23px;
-    // width: 220px;
-  }
-
   @media screen and (min-width: 768px) {
     padding-top: 7px;
     padding-left: 368px;
     padding-bottom: 20px;
-    // text-align: left;
   }
 
   @media screen and (min-width: 1200px) {
-    // padding-top: 340px;
     padding-left: 600px;
-    padding-right: 105px;
+    padding-right: 90px;
     padding-top: 90px;
 
     padding-bottom: 122px;
@@ -141,9 +133,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about-description__paragraph:nth-child(1) {
-    padding-right: 2px;
-  }
+  .about-description__paragraph:nth-child(1),
   .about-description__paragraph:nth-child(2) {
     padding-right: 2px;
   }
@@ -265,7 +255,6 @@
 }
 
 .about__btn {
-  // display: block;
   display: flex;
   align-items: center;
   justify-content: center;
