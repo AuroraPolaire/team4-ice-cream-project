@@ -27,6 +27,12 @@
   background-color: transparent;
   border: 0;
   padding: 0;
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 @media screen and (min-width: 768px) {
