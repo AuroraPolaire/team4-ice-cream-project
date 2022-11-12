@@ -22,6 +22,25 @@
   }
 }
 
+.h1-label{
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+      font-size:22px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      letter-spacing: 0.04em;
+    }
+
+}
+
 .product-list {
   display: flex;
   flex-direction: column;
@@ -29,21 +48,7 @@
   justify-content: center;
   gap: 164px;
 }
-
-// .product-list__item {
-//   position: relative;
-//   width: 100%;
-//   height: 420px;
-//   border-radius: 24px;
-
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-
+ 
 .product-list .product-1 {
   background: var(--accent-1-secondary);
 
@@ -96,6 +101,9 @@
   background-color: transparent;
   border: transparent;
 
+  margin-left: auto;
+  margin-right: auto;
+
   &::after {
     position: absolute;
     left: 0;
@@ -105,12 +113,9 @@
     width: 60px;
     height: 16px;
     background-repeat: no-repeat;
-    background-position: center;
     background-image: url(../images/arrows/arrow-default.svg);
   }
 }
-
-// // ЦЕЙ КОД вже)) ПРАЦЮЄ-------------------------
 
 .products-arrow-btn:hover::after {
   background-image: url(../images/arrows/arrow-hover.svg);
@@ -119,8 +124,7 @@
 .products-arrow-btn:focus::after {
   background-image: url(../images/arrows/arrow-focus.svg);
 }
-// -------------------------------------
-
+ 
 /* MOBILE VERSION */
 
 .product-list__item {
@@ -200,13 +204,7 @@
   }
 }
 
-// >1200px
-// @media screen and (min-width: 1200px) {
-//   .section-products {
-//     background-size: cover;
-//   }
-// }
-
+ 
 /* TABLET VERSION */
 @media screen and (min-width: 768px) {
   .product-list {
