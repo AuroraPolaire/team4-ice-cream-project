@@ -285,6 +285,10 @@
     font-size: 14px;
     margin-bottom: 30px;
   }
+    &:hover .section-hero__stats-number {
+      color: var(--accent-2);
+      transform: rotateX(360deg);
+    }
 }
 .section-hero__stats-number {
   display: block;
@@ -299,7 +303,6 @@
   &:hover {
     color: var(--accent-2);
     transform: rotateX(360deg);
-    cursor: pointer;
   }
   @media screen and (min-width: 1200px) {
     font-size: 46px;
@@ -337,6 +340,5 @@
 }
 
 .section-hero__ice-cream-dish-img:hover {
-  cursor: pointer;
   transform: translateY(-10px);
 }
