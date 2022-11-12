@@ -300,10 +300,6 @@
   text-transform: uppercase;
   color: var(--text-dark);
   transition: 2000ms;
-  &:hover {
-    color: var(--accent-2);
-    transform: rotateX(360deg);
-  }
   @media screen and (min-width: 1200px) {
     font-size: 46px;
   }
