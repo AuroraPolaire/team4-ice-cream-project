@@ -26,16 +26,6 @@
   }
 }
 
-.header__logo {
-  display: inline-block;
-  transition: transform var(--transition-dur-and-func);
-
-  &:hover,
-  &:focus {
-    transform: scale(1.04);
-  }
-}
-
 .navigation__list {
   display: flex;
   gap: 27px;
