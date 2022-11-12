@@ -27,11 +27,12 @@
 }
 
 .header__logo {
+  display: inline-block;
   transition: transform var(--transition-dur-and-func);
 
   &:hover,
   &:focus {
-    transform: scale(1.1);
+    transform: scale(1.04);
   }
 }
 
@@ -45,16 +46,19 @@
 }
 
 .navigation__link {
+  display: inline-block;
   color: var(--text-light);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.21;
 
-  transition: color var(--transition-dur-and-func);
+  transition: color var(--transition-dur-and-func),
+  transform var(--transition-dur-and-func);
 
   &:hover,
   &:focus {
     color: var(--accent-2);
+    transform: scale(1.04);
   }
 }
 
@@ -98,18 +102,12 @@
   font-size: 14px;
 
   gap: 7px;
-  transition: transform var(--transition-dur-and-func);
 
   // transition: box-shadow var(--transition-dur-and-func);
 
   @media screen and (max-width: 767px) {
     display: none;
   }
-}
-
-.header-btn:hover,
-.header-btn:focus {
-  transform: scale(1.1);
 }
 
 // .header-btn:hover,
