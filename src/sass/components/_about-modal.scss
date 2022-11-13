@@ -1,0 +1,53 @@
+.about-modal__title {
+  margin-bottom: 20px;
+  font-family: 'Seymour One', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.about-modal__description {
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--text-dark);
+}
+
+.about-modal__video-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 88.84%;
+  margin-bottom: 20px;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .about-modal {
+    width: 568px;
+    padding: 32px 60px;
+  }
+
+  .about-modal__title {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+  }
+  .about-modal__video-wrapper {
+    padding-top: 45.76%;
+    margin-bottom: 32px;
+  }
+
+  .about-modal__description {
+    font-size: 16px;
+  }
+}

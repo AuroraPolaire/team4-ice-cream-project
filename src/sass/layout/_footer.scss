@@ -18,6 +18,7 @@
         @media screen and (min-width:1200px) {
             margin-bottom: 54px;
         }
+
 }
 
 .footer-subtitle {
@@ -31,12 +32,14 @@
     padding-bottom: 16px;
 
 
+
     @media screen and (min-width:768px) {
 
         font-size: 26px;
         letter-spacing: 0.04em;
         max-width: 352px;
         padding-bottom: 9px;
+
     }
 
 
@@ -47,6 +50,7 @@
         letter-spacing: 0.04em;
         max-width: 504px;
         padding-bottom: 14px;
+
     }
 }
 
@@ -98,6 +102,7 @@
 
     @media screen and (min-width:1200px) {
         padding-bottom: 40px;
+
     }
 }
 
@@ -136,6 +141,7 @@
     }
 
 
+
     @media screen and (min-width:768px) {
         height: 34px;
         width: 34px;
@@ -153,6 +159,7 @@
     line-height: 1.86;
     color: var(--text-dark);
     text-align: right;
+
 
     @media screen and (min-width:768px) {
         font-size: 14px;

@@ -1,0 +1,48 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal buy-modal">
+    <button type="button" class="modal__close-btn" data-modal-close>
+      <svg width="16" height="16" aria-label="Закрити">
+        <use href="./images/icons.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <p class="buy-modal__title">Buy now</p>
+    <ul class="buy-modal__list">
+      <li class="buy-modal__item buy-modal__item--green">ice cream</li>
+      <li class="buy-modal__item buy-modal__item--yellow">ice coffee</li>
+      <li class="buy-modal__item buy-modal__item--brown">milkshake</li>
+    </ul>
+    <div class="buy-modal__form-box">
+      <form name="buy-modal-form" class="buy-modal__form">
+        <label>
+          <input
+            class="buy-modal__name-input"
+            type="text"
+            name="user_name"
+            required
+            pattern="[a-zA-Zа-яА-ЯіІїЇʼҐґєЄ]+"
+            autocomplete="off"
+            placeholder="Name"
+          />
+        </label>
+        <label>
+          <input
+            class="buy-modal__phone-input"
+            type="tel"
+            name="user-phone-number"
+            required
+            autocomplete="off"
+            placeholder="Phone"
+          />
+        </label>
+        <label>
+          <textarea
+            class="buy-modal__comment-input"
+            name="comment"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+        <button class="button buy-modal__button" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

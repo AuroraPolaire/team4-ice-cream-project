@@ -4,22 +4,29 @@
   padding: 7px 10px;
   font-family: var(--button-font);
   font-size: 8px;
-  font-weight: 600px;
+  font-weight: 600;
   background-color: transparent;
   border: 2px solid var(--active);
   border-radius: 8px;
   color: #000;
 
   transition: color var(--transition-dur-and-func),
-    border var(--transition-dur-and-func);
+    border var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func),
+    transform var(--transition-dur-and-func);
 
   &:hover {
     border: 2px solid var(--hover);
+    cursor: url('./../images/cursor.png'), auto;
+    box-shadow: rgba(174, 198, 165, 0.32) 0px 2px 4px 0px, rgba(174, 198, 165, 0.42) 0px 2px 16px 0px;
+    transform: scale(1.03);
   }
 
   &:focus {
     border: 2px solid var(--hover);
     color: var(--focus);
+    box-shadow: rgba(174, 198, 165, 0.32) 0px 2px 4px 0px, rgba(174, 198, 165, 0.42) 0px 2px 16px 0px;
+    transform: scale(1.03);
   }
 
   &:disabled {
@@ -41,21 +48,32 @@
 //   Звичайна кнопка   //
 
 .button {
+  padding: 12px 34px;
+
   font-family: var(--button-font);
-  font-size: 8px;
+  font-size: 12px;
+  font-weight: 600;
   background-color: var(--active);
+  border: 0;
   border-radius: 8px;
   color: #000;
   transition: color var(--transition-dur-and-func),
-    background-color var(--transition-dur-and-func);
+    background-color var(--transition-dur-and-func),
+    transform var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func);
 
   &:hover {
     background-color: var(--hover);
+    cursor: url('./../images/cursor.png'), auto;
+    transform: scale(1.03);
+    box-shadow: rgba(174, 198, 165, 0.32) 0px 2px 4px 0px, rgba(174, 198, 165, 0.42) 0px 2px 16px 0px;
   }
 
   &:focus {
     background-color: var(--hover);
     color: var(--focus);
+    box-shadow: rgba(174, 198, 165, 0.32) 0px 2px 4px 0px, rgba(174, 198, 165, 0.42) 0px 2px 16px 0px;
+    transform: scale(1.03);
   }
 
   &:disabled {
@@ -64,23 +82,32 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .button {
+    font-size: 14px;
+  }
+}
+
 //   Кнопка тільки з текстом  //
 
 .button-text-only {
   font-family: var(--button-font);
   font-size: 8px;
-  font-weight: 600px;
+  font-weight: 600;
   text-decoration: underline;
   background-color: transparent;
   color: var(--active);
-  transition: color var(--transition-dur-and-func);
+  transition: color var(--transition-dur-and-func),
+  transform var(--transition-dur-and-func);
 
   &:hover {
     color: var(--hover);
+    transform: scale(1.03);
   }
 
   &:focus {
     color: var(--focus);
+    transform: scale(1.03);
   }
 
   &:disabled {

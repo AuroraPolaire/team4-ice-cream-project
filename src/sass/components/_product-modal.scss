@@ -1,0 +1,140 @@
+.product-modal {
+  padding: 28px 20px 32px 20px;
+}
+
+.product-modal__title {
+  margin-bottom: 20px;
+  font-family: 'Seymour One', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.product-modal__picture {
+  border-radius: 98.6301px;
+  position: relative;
+  z-index: 3;
+}
+
+.product-modal__picture-box {
+  position: relative;
+  margin-top: 20px;
+}
+
+.product-modal__picture-box::after {
+  z-index: 1;
+  position: absolute;
+  display: block;
+  content: ' ';
+
+  border-radius: 98.6301px;
+  width: 131px;
+  height: 131px;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -45%);
+}
+
+.products-modal__list {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 30px;
+}
+
+.products-modal__item {
+  position: relative;
+  width: 53px;
+  height: 72px;
+  padding-top: 50px;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+  color: var(--text-dark);
+  font-size: 10px;
+  text-align: center;
+}
+
+.products-modal__item::before {
+  position: absolute;
+  padding-top: 14px;
+  content: ' ';
+  width: 42px;
+  height: 42px;
+  background: #9cbe8f;
+  // border: 2px solid #9cbe8f;
+  border-radius: 50%;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -1px);
+}
+
+.products-modal__item--kcal::before {
+  content: '320';
+}
+.products-modal__item--prot::before {
+  content: '4g';
+}
+.products-modal__item--fats::before {
+  content: '0.2g';
+}
+.products-modal__item--carbs::before {
+  content: '40.4g';
+}
+
+.products-modal__title2 {
+  margin-top: 39px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--text-dark);
+}
+
+.products-modal__table {
+  margin-bottom: 43px;
+  width: 100%;
+  margin-top: 20px;
+  color: var(--text-dark);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+}
+
+.products-modal__table td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.products-modal__table tr td + td {
+  text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  .product-modal {
+    padding: 32px 40px;
+    width: 568px;
+  }
+
+  .products-modal__item {
+    padding-top: 60px;
+    width: 65px;
+    height: 90px;
+    font-size: 12px;
+  }
+
+  .products-modal__item::before {
+    padding-top: 19px;
+    width: 53px;
+    height: 53px;
+  }
+}

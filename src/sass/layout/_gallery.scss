@@ -1,0 +1,124 @@
+.mergening-sections {
+    width: 100%;
+    background: url(./../images/bg-icecream-320@1x.jpg) 0px 140px no-repeat,
+        linear-gradient(var(--background-color) 0% 2%, var(--text-light) 2% 6.8%, var(--background-color) 6.8% 100%) 0 0 / contain;
+    background-size: contain;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .mergening-sections {
+        background: url(./../images/bg-icecream-320@2x.jpg) 0px 140px no-repeat,
+            linear-gradient(var(--background-color) 0% 2%, var(--text-light) 2% 6.8%, var(--background-color) 6.8% 100%) 0 0 / contain;
+        background-size: contain;
+    }
+}
+
+.gallery__section {
+    padding-top: 20px;
+}
+
+.gallery {
+    position: relative;
+}
+
+.gallery__item {
+    opacity: 0;
+
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:not(:first-child) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    &.active {
+        opacity: 1;
+    }
+}
+
+.gallery__img {
+    display: block;
+    width: 110%;
+    overflow: hidden;
+    border-radius: 7.41px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 475px) {
+    .mergening-sections {
+        background: url(./../images/bg-icecream-768@1x.jpg) 0px 95px no-repeat,
+            linear-gradient(to top, var(--background-color) 100%, var(--background-color) 100%);
+
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .mergening-sections {
+            background: url(./../images/bg-icecream-768@2x.jpg) 0px 95px no-repeat,
+                linear-gradient(to top, var(--background-color) 100%, var(--background-color) 100%);
+            background-size: contain;
+        }
+    }
+}
+
+@media screen and (min-width: 475px) and (max-width: 768px) {
+    .mergening-sections {
+        background: url(./../images/bg-icecream-768@1x.jpg) 0px 195px no-repeat,
+            linear-gradient(to top, var(--background-color) 100%, var(--background-color) 100%);
+        background-size: contain;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .mergening-sections {
+            background: url(./../images/bg-icecream-768@2x.jpg) 0px 195px no-repeat,
+                linear-gradient(to top, var(--background-color) 100%, var(--background-color) 100%);
+            background-size: contain;
+        }
+    }
+
+    .gallery__img {
+        border-radius: 18px;
+    }
+}
+
+// 1200px//
+
+@media screen and (min-width: 769px) {
+    .mergening-sections {
+        background: url(./../images/bg-icecream-1200@1x.jpg) 0px 190px no-repeat,
+            linear-gradient(to top, var(--background-color) 100%, var(--background-color) 100%);
+        background-size: auto;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .mergening-sections {
+            background: url(./../images/bg-icecream-1200@2x.jpg) 0px 190px no-repeat,
+                linear-gradient(to top, var(--background-color) 100%, var(--background-color) 100%);
+            background-size: contain;
+        }
+    }
+
+    .gallery__section {
+        padding-top: 43px;
+    }
+
+    .gallery__img {
+        border-radius: 24px;
+    }
+}
+
+// >1200px
+@media screen and (min-width: 1201px) {
+    .mergening-sections {
+        background-size: contain;
+    }
+}

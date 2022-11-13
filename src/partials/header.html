@@ -1,0 +1,69 @@
+<header class="header">
+  <div class="header__container container">
+    <nav class="navigation">
+      <a href="./index.html" class="header__logo">
+        <picture>
+          <source
+            srcset="
+              ./images/dsktp-icon-main.png    1x,
+              ./images/dsktp-icon-main@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          >
+
+          <source
+            srcset="
+              ./images/tablet-icon-main.png    1x,
+              ./images/tablet-icon-main@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          >
+
+          <source
+            srcset="
+              ./images/mobile-icon-main.png    1x,
+              ./images/mobile-icon-main@2x.png 2x
+            "
+            media="(min-width: 480px)"
+          >
+
+          <img
+            class="header__logo-icon"
+            src="./images/mobile-icon-main.png"
+            alt="іконка бренда"
+          >
+        </picture>
+      </a>
+
+      <ul class="navigation__list">
+        <li><a href="./index.html" class="navigation__link">Home</a></li>
+        <li><a href="#made" class="navigation__link">How it’s made?</a></li>
+        <li><a href="#products" class="navigation__link">Our products</a></li>
+        <li><a href="#contact" class="navigation__link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button type="button" class="mobile-menu-btn" data-menu-open>
+      <svg
+        class="mobile-menu-btn__icon"
+        width="32"
+        height="32"
+        aria-label="Виклик мобільного меню"
+      >
+        <use href="./images/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <button type="button" class="header-btn button" data-modal-open>
+      Buy now
+      <svg
+        class="header-btn__icon"
+        width="12"
+        height="12"
+        aria-label="Елемент кнопки, стрілочка вправо"
+      >
+        <use href="./images/icons.svg#icon-greater-sign2"></use>
+      </svg>
+    </button>
+  </div>
+</header>
