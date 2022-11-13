@@ -2,7 +2,7 @@
 
 .section-hero {
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   background-color: var(--background-color);
 }
 
@@ -215,11 +215,11 @@
 
   @media screen and (min-width: 768px) {
     transform: translateX(-5.5%);
-    top: -5%;
+    bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     transform: translateX(-38px);
-    top: -4%;
+    bottom: 0;
   }
 }
 
