@@ -7,6 +7,18 @@
         display: flex;
         justify-content: space-between;
     }
+
+}
+
+.title-wrapper {
+    @media screen and (min-width:768px) {
+            margin-bottom: 32px;
+        }
+    
+        @media screen and (min-width:1200px) {
+            margin-bottom: 54px;
+        }
+
 }
 
 .footer-subtitle {
@@ -17,15 +29,17 @@
     color: var(--text-light);
     text-align: left;
     max-width: 234px;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
 
-  
+
+
     @media screen and (min-width:768px) {
 
         font-size: 26px;
         letter-spacing: 0.04em;
         max-width: 352px;
-        margin-bottom: 9px;
+        padding-bottom: 9px;
+
     }
 
 
@@ -35,7 +49,8 @@
         font-weight: 400;
         letter-spacing: 0.04em;
         max-width: 504px;
-        margin-bottom: 14px;
+        padding-bottom: 14px;
+
     }
 }
 
@@ -52,7 +67,6 @@
     @media screen and (min-width:768px) {
         font-size: 48px;
         max-width: 340px;
-        margin-bottom: 32px;
         letter-spacing: 0.05em;
     }
 
@@ -60,25 +74,35 @@
     @media screen and (min-width:1200px) {
         font-size: 58px;
         max-width: 497px;
-        margin-bottom: 54px;
     }
 
+}
+
+.footer-social {
+    margin-bottom: 40.01px;
+        margin-top: 42.01px;
+
+@media screen and (min-width:768px) {
+        margin-top: 68px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-top: 12px;
+    }
 }
 
 .footer-social__list {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 38.01px;
-    margin-top: 42.01px;
+    padding-bottom: 38.01px;
 
     @media screen and (min-width:768px) {
-        margin-top: 68px;
-        margin-bottom: 32px;
+        padding-bottom: 32px;
     }
 
     @media screen and (min-width:1200px) {
-        margin-top: 12px;
-        margin-bottom: 40px;
+        padding-bottom: 40px;
+
     }
 }
 
@@ -112,6 +136,11 @@
         scale: 1.15;
     }
 
+    &:hover {
+        scale: 0.9;
+    }
+
+
 
     @media screen and (min-width:768px) {
         height: 34px;
@@ -130,7 +159,7 @@
     line-height: 1.86;
     color: var(--text-dark);
     text-align: right;
-    padding-bottom: 40.01px;
+
 
     @media screen and (min-width:768px) {
         font-size: 14px;
@@ -151,17 +180,16 @@
 }
 
 .footer-rights {
-    position: relative;
     padding-top: 16px;
     border-top: solid 1px var(--focus);
     padding-bottom: 62.01px;
 
-  @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         padding-top: 14px;
         padding-bottom: 1px;
     }
 
-  @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         padding-top: 12px;
         padding-bottom: 11px;
     }
