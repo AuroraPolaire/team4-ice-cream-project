@@ -299,6 +299,7 @@
   right: 8px;
   background: none;
   border: none;
+  overflow-x: hidden;
 
   @media screen and (min-width: 768px) {
     top: 20px;
@@ -316,7 +317,8 @@
   transition: top 0.3s ease-in-out;
   z-index: 50000;
   background-color: #fff;
-  overflow: auto;
+  // overflow: auto;
+  overflow-x: hidden;
   opacity: 1;
   background: rgba(91, 63, 63, 0.2);
 }
@@ -358,6 +360,7 @@
   border: 2px solid var(--accent-2);
   border-radius: 10px;
   overflow-y: auto;
+  overflow-x: hidden;
 
   &--maps {
     @media screen and (min-width: 768px) {
