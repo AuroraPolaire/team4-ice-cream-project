@@ -277,6 +277,11 @@
   transform: scale(0);
 }
 
+.form__input:not(:placeholder-shown) + .field__name,
+.field__textarea:not(:placeholder-shown) + .field__name {
+  display: none;
+}
+
 .form__input:hover,
 .field__textarea:hover {
   cursor: url('./../images/cursor.png'), auto;
@@ -317,7 +322,6 @@
   transition: top 0.3s ease-in-out;
   z-index: 50000;
   background-color: #fff;
-  // overflow: auto;
   overflow-x: hidden;
   opacity: 1;
   background: rgba(91, 63, 63, 0.2);
@@ -447,13 +451,6 @@
   text-align: center;
 }
 
-// .modal-maps {
-//   @media screen and (max-width: 767px) {
-//   height: 365px;
-//   width: 280px;
-//   }
-// }
-
 .close-modal-contacts:hover .icon-close-button {
   fill: var(--hover);
 }
@@ -464,10 +461,6 @@
   .modal-contact__container {
     padding: 32px 60px;
   }
-  // .modal-maps {
-  //   width: 568px;
-  //   height: 458px;
-  // }
 
   .map__container {
     width: 468px;
